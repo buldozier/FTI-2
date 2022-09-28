@@ -12,7 +12,7 @@
   justify-content: center;
   position: relative;
   background: url(./../img/photo/физтех\ линии\ полупрозрачный.png) no-repeat 50% 25%;
-  background-size: 60%;
+  background-size: 240px;
 }
 
 .footer__content {
@@ -81,7 +81,7 @@
   transition: 0.2s all ease-in-out;
 }
 
-.footer__btn:hover {
+.footer__btn:active{
   color: #fcba28;
   background-color: #0f0d0e;
 }
