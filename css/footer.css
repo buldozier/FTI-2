@@ -9,7 +9,16 @@
   margin: 0 auto;
   padding: 50px 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  background: url(./../img/photo/физтех\ линии\ полупрозрачный.png) no-repeat 50% 25%;
+  background-size: 60%;
+}
+
+.footer__content {
+
+  width: 310px;
+  z-index: 5;
 }
 
 .footer__title,
@@ -18,7 +27,7 @@
 }
 
 .footer__contacts {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
@@ -44,7 +53,7 @@
   width: 30px;
   top: -5px;
   left: -45px;
-  background: url(./../img/icons/envelope.svg);
+  background: url(./../img/icons/envelope.svg) no-repeat 50% 50%;
 }
 
 .footer__vk {
@@ -58,10 +67,11 @@
   width: 40px;
   top: -10px;
   left: -45px;
-  background: url(./../img/icons/email.svg);
+  background: url(./../img/icons/email.svg) no-repeat 50% 50%;
 }
 
 .footer__btn {
+  margin: 0 auto;
   width: 180px;
   height: 50px;
   line-height: 50px;
@@ -81,7 +91,15 @@
   text-decoration: none;
 }
 
+.footer__picture {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  z-index: 2;
+}
+
 .footer__picture img {
+  display: none;
   width: 245px;
 }
 
@@ -109,4 +127,73 @@
 
 .btn__to__top__hidden {
   transform: translateY(150px);
-}пше
+}
+
+@media (max-width: 1024px) {
+  .btn__to__top {
+    display: none;
+  }
+
+  .footer__contacts {
+    justify-content: space-between;
+  }
+
+  .footer__mail {
+    margin-left: 30px;
+  }
+
+  .footer__mail::before {
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -30px;
+
+    background-size: 20px;
+  }
+
+  .footer__vk {
+    margin-left: 60px;
+  }
+
+  .footer__vk::before {
+    height: 30px;
+    width: 30px;
+    top: -7px;
+    left: -35px;
+    background-size: 30px;
+  }
+}
+
+@media (max-width: 1275px) and (min-width: 1024px) {
+  .container__footer {
+    width: 870px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container__footer {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .footer__vk {
+    margin-top: 20px;
+    margin-left: 45px;
+  }
+
+  .footer__vk::before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: -10px;
+    left: -50px;
+    background: url(./../img/icons/email.svg);
+  }
+
+  .partners__flexbox {
+    width: 570px;
+    margin: 0 auto;
+  }
+}
