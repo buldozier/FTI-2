@@ -79,7 +79,17 @@
   </div>
   <div class="departments__inner">
     <div class="container">
-      <h2 class="departments__header">Кафедры</h2>
+      <div class="departments__top">
+        <h2 class="departments__header">Кафедры</h2>
+        <div class="slider-buttons">
+          <button class="swiper-button-prev">
+            <img src="img/icons/arrow-up-short 1.svg" />
+          </button>
+          <button class="swiper-button-next">
+          <img src="img/icons/arrow-up-short 1.svg" />
+          </button>
+        </div>
+      </div>
       <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -88,7 +98,7 @@
           <div class="swiper-slide">
             <div class="department__card">
               <div class="department__title">
-                <h4>Теоретической физики и прикладной математики</h4>
+                <h4 class="department__title__big">Теоретической физики и прикладной математики</h4>
               </div>
               <div class="department__description">
                 <p>

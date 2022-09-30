@@ -1,7 +1,7 @@
 .page__wrap {
   padding-top: 100px;
-  margin-bottom: 50px;
-  background: url(./../img/photo/FTI_TEXT.svg) no-repeat 100% 4%;
+  margin-bottom: 100px;
+  background: url(./../img/photo/FTI_TEXT.svg) no-repeat 100% 7%;
   background-size: 150px;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .about__end__picture img {
-  width: 150px;
+  width: 270px;
   border-radius: 10px;
 }
 
@@ -89,12 +89,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 35px;
 }
 
 .people__fti__photo {
   width: 250px;
   text-align: center;
+}
+
+.people__fti__photo p {
+  height: 44px;
 }
 
 .people__fti__photo img {
@@ -117,6 +121,7 @@
   border-radius: 20px;
   margin-bottom: 40px;
   position: relative;
+  overflow: hidden;
 }
 
 .departments__inner .container {
@@ -131,8 +136,8 @@
 .swiper {
   width: 280px;
   color: #0f0d0e;
+  overflow: inherit !important;
 }
-
 
 .department__card {
   width: 280px;
@@ -156,8 +161,8 @@
 
 .department__title__big {
   font-size: 18px;
+  margin: auto;
 }
-
 
 .department__description {
   font-size: 14px;
@@ -170,6 +175,7 @@
   padding: 15px 15px 30px 50px;
   border-radius: 0 0 10px 10px;
   font-size: 14px;
+
   position: relative;
 }
 
@@ -197,33 +203,13 @@
   background: url(./../img/icons/calendar-date.svg);
 }
 
-.swiper__btns {
+.slider-buttons {
   display: none;
-
-  width: 370px;
-  margin: 50px auto 0;
-  justify-content: space-between;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
-.swiper__btn {
-  fill: #f9f4da;
-  transition: all 0.1s ease-in;
-}
-
-#btn__2 {
-  cursor: pointer;
-}
-
-.swiper__btn:not(.no__color__btn):hover {
-  fill: #fcba28;
-}
-
-.no__color__btn {
-  fill: #494949;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
 }
 
 /* Partners */
@@ -255,335 +241,253 @@
   filter: saturate(1);
 }
 
-
-/* About institute */
-
-/* .about__inner {
-  margin-bottom: 150px;
+@media (min-width: 576px) {
 }
 
-.about__top__content {
-  display: flex;
-  width: 100%;
-  gap: 30px;
-  justify-content: space-between;
-}
-
-.about__text {
-  width: 700px;
-  margin-bottom: 60px;
-}
-
-.about__more {
-  display: flex;
-}
-
-.about__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 35px;
-  margin-bottom: 80px;
-}
-
-.about__button {
-  display: flex;
-  width: 178px;
-  height: 50px;
-  border: 1px solid #fcba28;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  color: #fcba28;
-  cursor: pointer;
-  transition: 0.2s all ease-in-out;
-}
-
-.about__button:hover {
-  color: #0f0d0e;
-  background-color: #fcba28;
-}
-
-.about__end__pictures {
-  display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.about__end__picture {
-  border-radius: 10px;
-  box-shadow: 5px 5px #fcba28;
-}
-
-.about__end__picture img {
-  border-radius: 10px;
-}
-
-.about__picture {
-  display: inline-block;
-  border-radius: 50%;
-  height: 350px;
-
-  box-shadow: 5px 5px #fcba28;
-}
-
-.about__picture img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-} */
-
-/* People FTI */
-
-/* .people__fti__inner {
-  margin-bottom: 150px;
-}
-
-.people__fti__photos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-}
-
-.people__fti__photo {
-  width: 350px;
-  text-align: center;
-}
-
-.people__fti__photo img {
-  margin-bottom: 30px;
-  border-radius: 20px;
-  box-shadow: 5px 5px #fcba28;
-  width: 350px;
-}
-
-.people__fti__photo h3 {
-  margin-bottom: 20px;
-} */
-
-/* Departments */
-
-/* .departments__inner {
-  margin-left: 30px;
-  margin-right: 30px;
-  background-color: #231f20;
-  border-radius: 20px;
-  margin-bottom: 150px;
-  position: relative;
-}
-
-.departments__inner .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.departments__header {
-  margin-bottom: 50px;
-}
-
-.cards__swiper {
-  overflow: hidden;
-  position: relative;
-}
-
-.department__cards {
-  display: flex;
-  width: 4000px;
-  gap: 60px;
-  margin-left: 15px;
-  color: #0f0d0e;
-  transition: all 0.2s ease-in-out;
-  touch-action: auto;
-}
-
-.department__card {
-  width: 340px;
-  background-color: #f9f4da;
-  border-radius: 10px;
-}
-
-.department__title {
-  border-bottom: 2px solid #0f0d0e;
-  padding: 15px;
-  height: 58px;
-  text-align: center;
-}
-
-.department__title__small {
-  line-height: 58px;
-}
-
-.department__title__small__16 {
-  font-size: 22px;
-}
-
-.department__description {
-  font-size: 16px;
-  padding: 15px;
-  height: 300px;
-}
-
-.department__footer {
-  background-color: #fcba28;
-  padding: 15px 15px 15px 50px;
-  border-radius: 0 0 10px 10px;
-  font-size: 16px;
-  position: relative;
-}
-
-.department__head {
-  margin-bottom: 15px;
-}
-
-.department__head::before {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  height: 20px;
-  width: 20px;
-  background: url(./../img/icons/person.svg);
-}
-
-.department__year::before {
-  content: '';
-  position: absolute;
-  top: 48px;
-  left: 15px;
-  height: 20px;
-  width: 20px;
-  background: url(./../img/icons/calendar-date.svg);
-}
-
-.swiper__btns {
-  display: flex;
-
-  width: 370px;
-  margin: 50px auto 0;
-  justify-content: space-between;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-.swiper__btn {
-  fill: #f9f4da;
-  transition: all 0.1s ease-in;
-}
-
-#btn__2 {
-  cursor: pointer;
-}
-
-.swiper__btn:not(.no__color__btn):hover {
-  fill: #fcba28;
-}
-
-.no__color__btn {
-  fill: #494949;
-} */
-
-/* Partners */
-
-/* .partners__flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.partner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 150px;
-  background-color: #f9f4da;
-  border-radius: 20px;
-}
-
-.partner img {
-  filter: saturate(0);
-  transition: all 0.2s ease-in-out;
-}
-
-.partner:hover img {
-  filter: saturate(1);
-}
-
-@media (max-width: 1275px) and (min-width: 1024px) {
+@media (min-width: 768px) {
   .container {
-    width: 870px;
-    margin: 0 auto;
+    max-width: 680px;
   }
 
-  .about__inner {
-    margin-bottom: 150px;
+  .page__wrap {
+    background-size: 250px;
   }
 
-  .about__title__and__text,
-  .about__text {
-    width: 490px;
+  .about__buttons {
+    flex-direction: row;
+    justify-content: center;
   }
 
   .about__picture {
-    display: block;
-    width: 400px;
-    position: relative;
-    top: 0;
-    margin: 50px auto 0 auto;
+    top: 10px;
   }
 
+  .people__fti__photos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .swiper {
+    width: 580px;
+  }
+
+  .partners__flexbox {
+    width: 100%;
+  }
+
+  .partner {
+    width: 200px;
+    height: 100px;
+  }
+
+  .partner img {
+    transform: scale(0.7);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 970px;
+  }
+
+  .page__wrap {
+    background-size: 350px;
+  }
+
+  .about__inner {
+    margin-bottom: 100px;
+  }
+
+  .about__top__content {
+    display: flex;
+    gap: 20px;
+  }
+
+  .about__picture {
+    display: inline-block;
+    position: inherit;
+    filter: brightness(1);
+    box-shadow: 5px 5px #fcba28;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .about__picture img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+
+  .about__title__and__text {
+    width: 600px;
+  }
+
+  .about__buttons {
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+
+  .about__button:hover {
+    color: #0f0d0e;
+    background-color: #fcba28;
+  }
+
+  .about__end__pictures {
+    display: flex;
+  }
+
+  .people__fti__inner {
+    margin-bottom: 100px;
+  }
+
+  .people__fti__photo {
+    width: 300px;
+    text-align: center;
+  }
+
+  .people__fti__photo img {
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px #fcba28;
+    width: 300px;
+  }
+
+  .departments__inner {
+    margin-bottom: 100px;
+  }
+
+  .departments__inner .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .departments__header {
+    margin-bottom: 80px;
+  }
+
+  .departments__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider-buttons {
+    display: flex;
+    gap: 30px;
+
+    margin-right: 50px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    --swiper-navigation-size: 0px;
+    position: static !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50%;
+    border: none;
+    background-color: #fcba28 !important;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #f9f4da !important;
+  }
+
+  .swiper-button-disabled {
+    background-color: #fcba28 !important;
+  }
+
+  .swiper-button-prev img,
+  .swiper-button-next img {
+    pointer-events: none;
+    width: 60px;
+    height: 60px;
+  }
+
+  .swiper-button-prev img {
+    transform: rotate(-90deg);
+  }
+
+  .swiper-button-next img {
+    transform: rotate(90deg);
+  }
+
+  .swiper {
+    width: 970px;
+  }
+
+  .department__card {
+    width: 310px;
+  }
+
+  .partner {
+    width: 270px;
+    height: 150px;
+  }
+
+  .partner img {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 1200px) {
+  .page__wrap {
+    background-size: 500px;
+  }
+
+  .about__top__content {
+    justify-content: space-between;
+  }
+
+  .about__title {
+    width: 800px;
+  }
+
+  .container {
+    max-width: 1170px;
+  }
   .people__fti__photos {
     justify-content: space-evenly;
   }
 
-  .departments__inner {
-    margin-left: 15px;
-    margin-right: 15px;
+  .swiper {
+    width: 1170px;
   }
 
-  .cards__swiper {
-    width: 770px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  .container {
-    width: 600px;
-    margin: 0 auto;
-  }
-
-  .about__title__and__text,
-  .about__text {
-    width: 600px;
-  }
-
-  .about__picture {
-    position: absolute;
-    filter: brightness(0.3);
-    top: 30px;
-    left: 70px;
-    z-index: -10;
-  }
-
-  .about__buttons {
-    gap: 25px;
-  }
-
-  .people__fti__photos {
-    justify-content: center;
-  }
-
-  .cards__swiper {
+  .department__card {
     width: 370px;
-    margin: 0 auto;
+  }
+
+  .department__title__big {
+    font-size: 24px;
+  }
+
+  .department__description,
+  .department__footer {
+    font-size: 16px;
+  }
+
+  .department__head::before {
+    top: 13px;
+    left: 15px;
+  }
+
+  .department__year::before {
+    top: 48px;
+    left: 15px;
   }
 
   .partners__flexbox {
-    width: 570px;
-    margin: 0 auto;
+    gap: 30px;
   }
-} */
+}

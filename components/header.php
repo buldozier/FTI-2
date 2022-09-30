@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-  <header>
+    <header>
       <div class="container__header">
         <div class="header__inner">
           <div class="header__logo">
@@ -22,6 +22,24 @@
               <img src="img/лев.png" alt="Логотип ФТИ" />
             </a>
           </div>
+        </div>
+        <div class="sidebar">
+          <nav class="sidebar__menu">
+            <ul class="menu__header__menu">
+              <li class="menu__item">
+                <a href="index.php" class="nav__button selected__nav">Об институте</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="nav__button">Направления подготовки</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="nav__button">Союз студентов ФТИ</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="nav__button">Полезные контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -34,7 +52,7 @@
       </button>
     </div>
     
-    <div class="sidebar">
+    <div class="sidebar__mobile">
       <nav class="sidebar__menu">
         <ul class="menu__header__menu">
           <li class="menu__item">

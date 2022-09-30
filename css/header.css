@@ -15,8 +15,6 @@ body {
   font-size: 18px;
 }
 
-
-
 h2 {
   margin: 0;
   font-size: 48px;
@@ -43,7 +41,7 @@ img {
   display: block;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   body {
     font-size: 14px;
   }
@@ -66,22 +64,16 @@ img {
   display: none;
 }
 
-.header {
-  display: none;
-}
-
 .logo__mobile {
   position: absolute;
   top: 15px;
   left: 15px;
-
 }
 
 .logo__mobile img {
   width: 50px;
   height: 50px;
 }
-
 
 .toggle__sidebar {
   z-index: 10;
@@ -149,13 +141,14 @@ img {
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
-.sidebar {
+.sidebar__mobile {
   display: none;
   position: absolute;
   width: calc(100% - 30px);
   margin: 15px;
   background-color: #f9f4da;
   color: #0f0d0e;
+  font-weight: 500;
   border-radius: 15px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -204,41 +197,74 @@ img {
   width: 100%;
 }
 
-/* .container__header {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 30px 15px 0px 15px;
+@media (min-width: 1024px) {
+  .logo__mobile,
+  .toggle__sidebar {
+    display: none;
+  }
+
+  .container__header {
+    display: flex;
+    width: 970px;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    display: flex;
+    align-self: center;
+    font-weight: 500;
+  }
+
+  .menu__header__menu {
+    flex-direction: row;
+  }
+
+  .menu__item a {
+    display: block;
+    text-decoration: none;
+    color: #f9f4da;
+    padding: 6px 0;
+    position: relative;
+  }
+
+  .nav__button:hover:after {
+    width: 100%;
+  }
+
+  .container__header {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 30px 15px 0px 15px;
+  }
+
+  /* Header */
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header__logo a {
+    display: inline-block;
+    text-decoration: none;
+    height: 80px;
+  }
+
+  .header__logo a img {
+    width: 100%;
+  }
 }
 
- */
-
-/* Header */
-
-/* .header__inner {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 1200px) {
+  .container__header {
+    width: 100%;
+  }
 }
-
-.header__logo {
-  width: 80px;
-  height: 80px;
-}
-
-.header__logo a {
-  display: inline-block;
-  text-decoration: none;
-  height: 80px;
-}
-
-.header__logo a img {
-  width: 100%;
-}
-
-.sidebar {
-  align-self: center;
-}
-
-
 
 /* @media (min-width: 1024px) {
   .nav__button:hover:after {

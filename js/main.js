@@ -1,5 +1,5 @@
 // Сайдбар на мобилке
-const sidebar = document.querySelector('.sidebar');
+const sidebar = document.querySelector('.sidebar__mobile');
 const menuIcon = document.querySelector('.menu__icon');
 const sidebarToggleBtn = document.querySelector('.menu__icon__wrapper');
 
@@ -31,11 +31,23 @@ const toggleSidebar = () => {
   sidebar.classList.toggle('sidebar__mobile__active');
 };
 
-
 // Swiper departments
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   spaceBetween: 20,
+  allowTouchMove: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    1024: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      allowTouchMove: false,
+    },
+  },
 
   // If we need pagination
   pagination: {
@@ -54,7 +66,6 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-
 // Scroll buttons
 const peopleFtiBtn = document.querySelector('.people__fti__btn');
 const departmentsBtn = document.querySelector('.departments__btn');
@@ -68,13 +79,13 @@ peopleFtiBtn.addEventListener('click', () => {
 
 departmentsBtn.addEventListener('click', () => {
   const departmentsBtnPosition =
-    document.querySelector('.departments__header').getBoundingClientRect().y + window.pageYOffset - 100;
+    document.querySelector('.departments__header').getBoundingClientRect().y + window.pageYOffset - 50;
   window.scrollTo(0, departmentsBtnPosition);
 });
 
 partnersBtn.addEventListener('click', () => {
   const partnersBtnPosition =
-    document.querySelector('.partners__header').getBoundingClientRect().y + window.pageYOffset - 150;
+    document.querySelector('.partners__header').getBoundingClientRect().y + window.pageYOffset - 50;
   window.scrollTo(0, partnersBtnPosition);
 });
 
