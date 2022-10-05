@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Физтех</title>
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/programs.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   </head>
   <body>
@@ -27,10 +24,10 @@
           <nav class="sidebar__menu">
             <ul class="menu__header__menu">
               <li class="menu__item">
-                <a href="index.php" class="nav__button selected__nav">Об институте</a>
+                <a href="index.php" class="nav__button">Об институте</a>
               </li>
               <li class="menu__item">
-                <a href="programs.php" class="nav__button">Направления подготовки</a>
+                <a href="programs.php" class="nav__button selected__nav">Направления подготовки</a>
               </li>
               <li class="menu__item">
                 <a href="#" class="nav__button">Союз студентов ФТИ</a>
@@ -44,22 +41,22 @@
       </div>
     </header>
     <div class="logo__mobile">
-      <img src="img/лев.png" alt="Логотип ФТИ">
+      <img src="img/лев.png" alt="Логотип ФТИ" />
     </div>
     <div class="toggle__sidebar">
       <button class="menu__icon__wrapper">
         <div class="menu__icon"></div>
       </button>
     </div>
-    
+
     <div class="sidebar__mobile">
       <nav class="sidebar__menu">
         <ul class="menu__header__menu">
           <li class="menu__item">
-            <a href="index.php" class="nav__button selected__nav">Об институте</a>
+            <a href="index.php" class="nav__button">Об институте</a>
           </li>
           <li class="menu__item">
-            <a href="programs.php" class="nav__button">Направления подготовки</a>
+            <a href="programs.php" class="nav__button selected__nav">Направления подготовки</a>
           </li>
           <li class="menu__item">
             <a href="#" class="nav__button">Союз студентов ФТИ</a>
@@ -72,7 +69,6 @@
     </div>
 
 
-
-
-  
-    
+<?php
+require('components/programs_component.php');
+require('components/footer.php');

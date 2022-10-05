@@ -41,6 +41,13 @@ img {
   display: block;
 }
 
+.page__wrap {
+  padding-top: 100px;
+  margin-bottom: 100px;
+  background: url(./../img/icons/FTI_TEXT.svg) no-repeat 100% 7%;
+  background-size: 150px;
+}
+
 @media (max-width: 1023px) {
   body {
     font-size: 14px;

@@ -1,0 +1,262 @@
+.container {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+/* About programs */
+.about__programs__inner {
+  margin-bottom: 50px;
+}
+
+.about__programs__flex {
+  display: flex;
+  flex-direction: column;
+  color: #0f0d0e;
+}
+
+.about__programs__img {
+  display: flex;
+  justify-content: center;
+}
+
+.about__programs__img img {
+  width: 310px;
+  border-radius: 10px;
+  box-shadow: 3px 3px #fcba28;
+}
+
+.about__programs__info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__programs__info h2 {
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.about__programs__info p {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.about__programs {
+  width: 310px;
+  background-color: #f9f4da;
+  border-radius: 10px;
+  box-shadow: 3px 3px #fcba28;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Programs slider */
+
+.programs__slider__inner {
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #231f20;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.programs__slider__inner .container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.programs__slider__header {
+  margin-bottom: 30px;
+}
+
+.swiper {
+  width: 280px;
+  color: #0f0d0e;
+  overflow: inherit !important;
+}
+
+.programs__slider__card {
+  width: 280px;
+  background-color: #f9f4da;
+  border-radius: 10px;
+}
+
+.programs__slider__title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 15px 0 15px;
+}
+
+.programs__slider__title__header {
+  display: flex;
+  text-align: center;
+  height: 48px;
+}
+
+.programs__slider__title__header h4 {
+  margin: auto;
+}
+
+.programs__slider__title__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.programs__stage {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: #f9f4da;
+}
+
+.bakalavr {
+  background-color: #163970;
+}
+
+.programs__direction__code {
+  align-self: center;
+}
+
+.programs__slider__description {
+
+  padding: 15px 15px 15px 25px;
+  height: 250px;
+}
+
+
+.programs__slider__footer {
+  display: flex;
+  gap: 20px;
+  padding: 0 15px 15px 15px;
+
+}
+
+.programs__slider__score {
+  margin-top: 10px;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.programs__slider__places > .number::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  width: 24px;
+  background: url(./../img/icons/people.svg);
+}
+
+.programs__slider__score > .number::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 24px;
+  width: 24px;
+  background: url(./../img/icons/check-all.svg);
+  background-size: contain;
+}
+
+.number + .text {
+  margin-top: 10px;
+}
+
+.programs__slider__subjects {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.subject {
+  margin-right: auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #f9f4da;
+  font-size: 12px;
+}
+
+.math {
+  background-color: #9d1717;
+}
+.russian {
+  background-color: #18756f;
+}
+.physics {
+  background-color: #18741b;
+}
+.informatics {
+  background-color: #741870;
+}
+
+.programs__slider__button {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #0f0d0e;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #0f0d0e;
+  transition: 0.2s all ease-in-out;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  
+}
+
+.programs__slider__button a {
+  color: #0f0d0e;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.programs__slider__button:active {
+  
+  background-color: #0f0d0e;
+}
+
+.programs__slider__button:active a{
+  color: #f9f4da;
+}
+
+.slider-buttons {
+  display: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .page__wrap {
+    background-size: 250px;
+  }
+
+  .about__programs__img img {
+    width: 500px;
+  }
+
+  .about__programs__info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
