@@ -11,6 +11,7 @@
 
 .about__programs__flex {
   display: flex;
+  gap: 30px;
   flex-direction: column;
   color: #0f0d0e;
 }
@@ -30,7 +31,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -38,6 +38,10 @@
 .about__programs__info h2 {
   margin-bottom: 0;
   padding: 20px;
+}
+
+.about__programs__count h2 {
+  padding-bottom: 0;
 }
 
 .about__programs__info p {
@@ -69,6 +73,11 @@
 .programs__slider__inner .container {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.program__slider__top {
+  display: flex;
+  justify-content: space-between;
 }
 
 .programs__slider__header {
@@ -105,6 +114,14 @@
   margin: auto;
 }
 
+.programs__small__title {
+  font-size: 18px;
+}
+
+.programs__small__title__chemistry {
+  font-size: 14px;
+}
+
 .programs__slider__title__bottom {
   display: flex;
   flex-direction: column;
@@ -123,22 +140,23 @@
   background-color: #163970;
 }
 
+.specialist {
+  background-color: #bb1d88;
+}
+
 .programs__direction__code {
   align-self: center;
 }
 
 .programs__slider__description {
-
-  padding: 15px 15px 15px 25px;
+  padding: 15px 15px 15px 30px;
   height: 250px;
 }
 
-
 .programs__slider__footer {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   padding: 0 15px 15px 15px;
-
 }
 
 .programs__slider__score {
@@ -159,6 +177,7 @@
   height: 24px;
   width: 24px;
   background: url(./../img/icons/people.svg);
+  background-size: contain;
 }
 
 .programs__slider__score > .number::after {
@@ -182,6 +201,11 @@
   flex-direction: column;
 }
 
+.physics__and__chemistry {
+  display: flex;
+  gap: 5px;
+}
+
 .subject {
   margin-right: auto;
   padding: 5px 10px;
@@ -193,14 +217,21 @@
 .math {
   background-color: #9d1717;
 }
+
 .russian {
   background-color: #18756f;
 }
+
 .physics {
   background-color: #18741b;
 }
+
 .informatics {
   background-color: #741870;
+}
+
+.chemistry {
+  background-color: #ff5c00;
 }
 
 .programs__slider__button {
@@ -212,8 +243,7 @@
   color: #0f0d0e;
   transition: 0.2s all ease-in-out;
   margin-left: 15px;
-  margin-bottom: 30px;
-  
+  margin-bottom: 40px;
 }
 
 .programs__slider__button a {
@@ -223,11 +253,10 @@
 }
 
 .programs__slider__button:active {
-  
   background-color: #0f0d0e;
 }
 
-.programs__slider__button:active a{
+.programs__slider__button:active a {
   color: #f9f4da;
 }
 
@@ -240,10 +269,22 @@
   display: none;
 }
 
+.swiper-pagination {
+  margin-bottom: 5px;
+}
+
+.swiper-scrollbar {
+  margin-bottom: 5px;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 680px;
     margin: 0 auto;
+  }
+
+  .swiper {
+    width: 580px;
   }
 
   .page__wrap {
@@ -258,5 +299,206 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 970px;
+  }
+
+  .programs__slider__inner .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .page__wrap {
+    background-size: 350px;
+  }
+
+  .about__programs__inner {
+    margin-bottom: 100px;
+  }
+
+  .about__programs__flex {
+    flex-direction: row-reverse;
+  }
+
+  .about__programs__img img {
+    box-shadow: 5px 5px #fcba28;
+  }
+
+  .about__programs {
+    width: 340px;
+    box-shadow: 5px 5px #fcba28;
+  }
+
+  .about__programs__info {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .about__programs__img {
+    width: 500px;
+    height: 333px;
+    margin: auto 0;
+  }
+
+  .programs__slider__header {
+    margin-bottom: 50px;
+  }
+
+  .swiper {
+    width: 970px;
+  }
+
+  .slider-buttons {
+    display: flex;
+    gap: 30px;
+
+    margin-right: 50px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    --swiper-navigation-size: 0px;
+    position: static !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50%;
+    border: none;
+    background-color: #fcba28 !important;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #f9f4da !important;
+  }
+
+  .swiper-button-disabled {
+    background-color: #fcba28 !important;
+  }
+
+  .swiper-button-prev img,
+  .swiper-button-next img {
+    pointer-events: none;
+    width: 60px;
+    height: 60px;
+  }
+
+  .swiper-button-prev img {
+    transform: rotate(-90deg);
+  }
+
+  .swiper-button-next img {
+    transform: rotate(90deg);
+  }
+
+  .programs__slider__card {
+    width: 310px;
+  }
+
+  .programs__slider__title__bottom {
+    flex-direction: row;
+    font-size: 12px;
+  }
+
+  .programs__slider__title__header {
+    height: 58px;
+  }
+
+  .programs__small__title__chemistry,
+  .text {
+    font-size: 16px;
+  }
+
+  .programs__slider__description {
+    font-size: 14px;
+  }
+
+  .programs__slider__button a {
+    font-size: 16px;
+  }
+
+  .programs__slider__button:hover {
+    background-color: #0f0d0e;
+  }
+
+  .programs__slider__button:hover a {
+    color: #f9f4da;
+  }
+
+  .number {
+    font-size: 24px;
+  }
+
+  .programs__slider__places > .number::after {
+    height: 29px;
+    width: 29px;
+  }
+
+  .programs__slider__score > .number::after {
+    height: 29px;
+    width: 29px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page__wrap {
+    background-size: 500px;
+  }
+
+  .container {
+    max-width: 1170px;
+  }
+
+  .about__programs__img img {
+    box-shadow: 5px 5px #fcba28;
+    width: 724px;
+    height: 482px;
+  }
+
+  .about__programs__img {
+    width: 724px;
+    height: 482px;
+    margin: 0;
+  }
+
+  .swiper {
+    width: 1170px;
+  }
+
+  .programs__slider__card {
+    width: 376px;
+  }
+
+  .programs__slider__title__bottom {
+    font-size: 14px;
+  }
+
+  .programs__small__title {
+    font-size: 24px;
+  }
+
+  .programs__small__title__chemistry {
+    font-size: 18px;
+  }
+
+  .programs__slider__description {
+    font-size: 16px;
+  }
+
+  .programs__slider__footer {
+    gap: 50px;
+  }
+
+  .subject {
+    font-size: 14px;
   }
 }
