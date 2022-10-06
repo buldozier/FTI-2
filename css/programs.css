@@ -60,6 +60,10 @@
 
 /* Programs slider */
 
+.slider__hidden {
+  display: none !important;
+}
+
 .programs__slider__inner {
   margin-left: 15px;
   margin-right: 15px;
@@ -80,8 +84,38 @@
   justify-content: space-between;
 }
 
-.programs__slider__header {
+.program__slider__top__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   margin-bottom: 30px;
+}
+
+.programs__slider__header {
+  margin-bottom: 0;
+}
+
+.programs__slider__top__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.programs__slider__top__button {
+  color: #fcba28;
+  padding: 10px;
+  border: 1px solid #fcba28;
+  border-radius: 10px;
+  cursor: pointer;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.button__checked {
+  color: #0f0d0e;
+  border: 1px solid #fcba28;
+  background-color: #fcba28;
 }
 
 .swiper {
@@ -91,7 +125,7 @@
 }
 
 .programs__slider__card {
-  width: 280px;
+  /* width: 280px; */
   background-color: #f9f4da;
   border-radius: 10px;
 }
@@ -346,7 +380,6 @@
   }
 
   .programs__slider__header {
-    margin-bottom: 50px;
   }
 
   .swiper {
@@ -401,7 +434,7 @@
   }
 
   .programs__slider__card {
-    width: 310px;
+    /* width: 310px; */
   }
 
   .programs__slider__title__bottom {
@@ -475,7 +508,7 @@
   }
 
   .programs__slider__card {
-    width: 376px;
+    /* width: 376px; */
   }
 
   .programs__slider__title__bottom {

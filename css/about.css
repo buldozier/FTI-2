@@ -133,7 +133,7 @@
 }
 
 .department__card {
-  width: 280px;
+  /* width: 280px; */
   background-color: #f9f4da;
   border-radius: 10px;
 }
@@ -420,7 +420,7 @@
   }
 
   .department__card {
-    width: 310px;
+    /* width: 310px; */
   }
 
   .partner {
@@ -458,7 +458,7 @@
   }
 
   .department__card {
-    width: 370px;
+    /* width: 370px; */
   }
 
   .department__title__big {

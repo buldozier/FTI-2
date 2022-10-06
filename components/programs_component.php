@@ -25,7 +25,13 @@
   <div class="programs__slider__inner">
     <div class="container">
       <div class="program__slider__top">
-        <h2 class="programs__slider__header">Направления подготовки</h2>
+        <div class="program__slider__top__content">
+          <h2 class="programs__slider__header">Направления подготовки</h2>
+          <div class="programs__slider__top__buttons">
+            <div class="programs__slider__top__button bakalavr__button button__checked">Бакалавриат/Специалитет</div>
+            <div class="programs__slider__top__button magistr__button">Магистратура</div>
+          </div>
+        </div>
         <div class="slider-buttons">
           <button class="swiper-button-prev">
             <img src="img/icons/arrow-up-short 1.svg" />
@@ -40,7 +46,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <!-- 1 program bakalavr -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -86,7 +92,7 @@
             </div>
           </div>
           <!-- 2 program bakalavr -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -129,7 +135,7 @@
             </div>
           </div>
           <!-- 3 program bakalavr -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -175,7 +181,7 @@
             </div>
           </div>
           <!-- 4 program bakalavr -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -222,7 +228,7 @@
             </div>
           </div>
           <!-- 5 program bakalavr -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -268,7 +274,7 @@
             </div>
           </div>
           <!-- 6 program bakalavr -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -313,7 +319,7 @@
             </div>
           </div>
           <!-- 7 program bakalavr -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -357,7 +363,7 @@
             </div>
           </div>
           <!-- 8 program bakalavr -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -400,7 +406,7 @@
             </div>
           </div>
           <!-- 9 program bakalavr -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -446,7 +452,7 @@
             </div>
           </div>
           <!-- 10 program bakalavr -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -492,7 +498,7 @@
             </div>
           </div>
           <!-- 1 program specialist -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -535,7 +541,7 @@
             </div>
           </div>
           <!-- 2 program specialist -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -579,7 +585,55 @@
             </div>
           </div>
           <!-- 3 program specialist -->
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__bakalavr">
+            <div class="programs__slider__card">
+              <div class="programs__slider__title">
+                <div class="programs__slider__title__header">
+                  <h4 class="programs__small__title__chemistry">
+                    Химическая технология материалов современной энергетики
+                  </h4>
+                </div>
+                <div class="programs__slider__title__bottom">
+                  <div class="programs__stage specialist">Специалитет</div>
+                  <div class="programs__direction__code">Код направления: 18.05.02</div>
+                </div>
+              </div>
+              <div class="programs__slider__description">
+                <ul>
+                  <li>Определение стратегии разработки и исследования новых материалы</li>
+                  <li>Управление производством редких металлов</li>
+                  <li>Создавание уникальных химических установок</li>
+                  <li>Проводение расчетов химико-технологических процессов</li>
+                  <li>Исследование механизмов химических реакций</li>
+                </ul>
+              </div>
+              <div class="programs__slider__footer">
+                <div class="places__and__score">
+                  <div class="programs__slider__places">
+                    <div class="number">32</div>
+                    <div class="text">бюджетных мест</div>
+                  </div>
+                  <div class="programs__slider__score">
+                    <div class="number">175</div>
+                    <div class="text">проходной балл</div>
+                  </div>
+                </div>
+                <div class="programs__slider__subjects">
+                  <div class="subject math">Математика</div>
+                  <div class="subject russian">Русский язык</div>
+                  <div class="physics__and__chemistry">
+                    <div class="subject physics">Физика</div>
+                    <div class="subject chemistry">Химия</div>
+                  </div>
+                  <div class="subject informatics">Информатика</div>
+                </div>
+              </div>
+              <div class="programs__slider__button">
+                <a href="https://programs.edu.urfu.ru/ru/10333/">Подробнее о направлении</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide ">
             <div class="programs__slider__card">
               <div class="programs__slider__title">
                 <div class="programs__slider__title__header">
@@ -628,6 +682,7 @@
             </div>
           </div>
         </div>
+
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
