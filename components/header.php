@@ -6,6 +6,7 @@
     <title>Физтех</title>
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/programs.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link
   rel="stylesheet"
@@ -27,16 +28,16 @@
           <nav class="sidebar__menu">
             <ul class="menu__header__menu">
               <li class="menu__item">
-                <a href="index.php" class="nav__button selected__nav">Об институте</a>
+                <a href="index.php" class="nav__button <?php echo $header1 ?>">Об институте</a>
               </li>
               <li class="menu__item">
-                <a href="programs.php" class="nav__button">Направления подготовки</a>
+                <a href="programs.php" class="nav__button <?php echo $header2 ?>">Направления подготовки</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="nav__button">Союз студентов ФТИ</a>
+                <a href="#" class="nav__button <?php echo $header3 ?>">Союз студентов ФТИ</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="nav__button">Полезные контакты</a>
+                <a href="#" class="nav__button <?php echo $header4 ?>">Полезные контакты</a>
               </li>
             </ul>
           </nav>
@@ -56,16 +57,16 @@
       <nav class="sidebar__menu">
         <ul class="menu__header__menu">
           <li class="menu__item">
-            <a href="index.php" class="nav__button selected__nav">Об институте</a>
+            <a href="index.php" class="nav__button <?php echo $header1 ?>">Об институте</a>
           </li>
           <li class="menu__item">
-            <a href="programs.php" class="nav__button">Направления подготовки</a>
+            <a href="programs.php" class="nav__button <?php echo $header2 ?>">Направления подготовки</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="nav__button">Союз студентов ФТИ</a>
+            <a href="#" class="nav__button <?php echo $header3 ?>">Союз студентов ФТИ</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="nav__button">Полезные контакты</a>
+            <a href="#" class="nav__button <?php echo $header4 ?>">Полезные контакты</a>
           </li>
         </ul>
       </nav>

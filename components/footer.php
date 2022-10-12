@@ -26,5 +26,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/swiper.js"></script>
+<script src="js/swiper.js" type="module"></script>
+<?php echo $scripts ?>
 </html>

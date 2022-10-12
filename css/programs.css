@@ -97,6 +97,7 @@
 
 .programs__slider__top__buttons {
   display: flex;
+  font-size: 12px;
   gap: 20px;
 }
 
@@ -156,6 +157,10 @@
   font-size: 14px;
 }
 
+.magistr__small__title {
+  font-size: 14px;
+}
+
 .programs__slider__title__bottom {
   display: flex;
   flex-direction: column;
@@ -178,6 +183,10 @@
   background-color: #bb1d88;
 }
 
+.magistr {
+  background-color: #540096;
+}
+
 .programs__direction__code {
   align-self: center;
 }
@@ -187,10 +196,26 @@
   height: 250px;
 }
 
+.programs__slider__description__magistr {
+  padding: 15px;
+  font-size: 14px;
+  height: 310px;
+}
+
 .programs__slider__footer {
   display: flex;
   gap: 15px;
   padding: 0 15px 15px 15px;
+}
+
+.programs__slider__footer__magistr {
+  display: flex;
+  gap: 20px;
+  padding: 0 15px 15px 15px;
+}
+
+.places__and__score {
+  width: 114px;
 }
 
 .programs__slider__score {
@@ -201,6 +226,15 @@
   font-size: 20px;
   font-weight: 500;
   position: relative;
+}
+
+.programs__slider__places a {
+  display: inline-block;
+  font-size: 0;
+}
+
+.programs__slider__places a + a {
+  margin-left: 20px;
 }
 
 .programs__slider__places > .number::after {
@@ -227,6 +261,10 @@
 
 .number + .text {
   margin-top: 10px;
+}
+
+.programs__slider__places a + .text {
+  margin-top: 5px;
 }
 
 .programs__slider__subjects {
@@ -280,7 +318,7 @@
   margin-bottom: 40px;
 }
 
-.programs__slider__button a {
+.programs__slider__button {
   color: #0f0d0e;
   text-decoration: none;
   font-size: 14px;
@@ -290,7 +328,7 @@
   background-color: #0f0d0e;
 }
 
-.programs__slider__button:active a {
+.programs__slider__button:active {
   color: #f9f4da;
 }
 
@@ -310,6 +348,59 @@
 .swiper-scrollbar {
   margin-bottom: 5px;
 }
+
+/* Calculator */
+
+.calculator__subjects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.calculator__subjects h3 {
+  align-self: center;
+}
+
+.calculator__subjects input {
+  padding: 15px;
+  color: #f9f4da;
+  border: 1px solid #f9f4da;
+  background: transparent;
+  border-radius: 10px;
+  outline: none;
+  align-self: center;
+}
+
+.calculator__subjects__invalid {
+  border-color: #9d1717 !important;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.calculator__subject label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.submit__ege {
+  padding: 15px;
+  border-radius: 10px;
+  color: #0f0d0e;
+  border: 1px solid #fcba28;
+  background-color: #fcba28;
+}
+
+/* Adaptive */
 
 @media (min-width: 768px) {
   .container {
@@ -333,6 +424,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .programs__slider__top__buttons {
+    font-size: 18px;
   }
 }
 
@@ -377,9 +472,6 @@
     width: 500px;
     height: 333px;
     margin: auto 0;
-  }
-
-  .programs__slider__header {
   }
 
   .swiper {
@@ -433,10 +525,6 @@
     transform: rotate(90deg);
   }
 
-  .programs__slider__card {
-    /* width: 310px; */
-  }
-
   .programs__slider__title__bottom {
     flex-direction: row;
     font-size: 12px;
@@ -455,7 +543,11 @@
     font-size: 14px;
   }
 
-  .programs__slider__button a {
+  .magistr__small__title {
+    font-size: 16px;
+  }
+
+  .programs__slider__button {
     font-size: 16px;
   }
 
@@ -463,8 +555,12 @@
     background-color: #0f0d0e;
   }
 
-  .programs__slider__button:hover a {
+  .programs__slider__button:hover {
     color: #f9f4da;
+  }
+
+  .places__and__score {
+    width: 130px;
   }
 
   .number {
@@ -479,6 +575,11 @@
   .programs__slider__score > .number::after {
     height: 29px;
     width: 29px;
+  }
+
+  .programs__slider__places a img {
+    width: 29px;
+    height: 29px;
   }
 }
 
@@ -507,8 +608,8 @@
     width: 1170px;
   }
 
-  .programs__slider__card {
-    /* width: 376px; */
+  .programs__slider__description__magistr {
+    font-size: 16px;
   }
 
   .programs__slider__title__bottom {
@@ -533,5 +634,9 @@
 
   .subject {
     font-size: 14px;
+  }
+
+  .programs__slider__footer__magistr {
+    gap: 50px;
   }
 }
