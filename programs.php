@@ -9,3 +9,4 @@ $scripts = '<script src="js/programs.js" type="module"></script>
 require('components/header.php');
 require('components/programs_component.php');
 require('components/footer.php');
+?>

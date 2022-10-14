@@ -419,10 +419,6 @@
     width: 970px;
   }
 
-  .department__card {
-    /* width: 310px; */
-  }
-
   .partner {
     width: 270px;
     height: 150px;
@@ -455,10 +451,6 @@
 
   .swiper {
     width: 1170px;
-  }
-
-  .department__card {
-    /* width: 370px; */
   }
 
   .department__title__big {

@@ -1376,36 +1376,36 @@
   <div class="calculator__inner">
     <div class="container">
       <h2>Калькулятор ЕГЭ</h2>
-      <form action="calculator.php" method="post">
+      <form class="calculator__form" method="POST" action="calculator.php">
         <div class="calculator__subjects">
           <div class="calculator__subject">
             <label>
               <h3>Русский язык</h3>
-              <input type="number" placeholder="40 - 100" name="ege_score[russian]" required min="40" max="100" />
+              <input type="number" placeholder="40 - 100" name="russ" required min="40" max="100" />
             </label>
           </div>
           <div class="calculator__subject">
             <label>
               <h3>Математика</h3>
-              <input type="number" placeholder="39 - 100" name="ege_score[math]" required min="39" max="100" />
+              <input type="number" placeholder="39 - 100" name="math" required min="39" max="100" />
             </label>
           </div>
           <div class="calculator__subject">
             <label>
               <h3>Физика</h3>
-              <input type="number" placeholder="39 - 100" name="ege_score[physics]" required min="39" max="100" />
+              <input type="number" placeholder="39 - 100" name="phys" min="39" max="100" />
             </label>
           </div>
           <div class="calculator__subject">
             <label>
               <h3>Информатика</h3>
-              <input type="number" placeholder="44 - 100" name="ege_score[inf]" required min="44" max="100" />
+              <input type="number" placeholder="44 - 100" name="inf" min="44" max="100" />
             </label>
           </div>
           <div class="calculator__subject">
             <label>
               <h3>Химия</h3>
-              <input type="number" placeholder="39 - 100" name="ege_score[chemistry]" required min="39" max="100" />
+              <input type="number" placeholder="39 - 100" name="chem" min="39" max="100" />
             </label>
           </div>
         </div>
@@ -1413,6 +1413,7 @@
           <button class="submit__ege" type="submit">Показать подходящие направления</button>
         </div>
       </form>
+      <p class="jojo"></p>
     </div>
   </div>
 </div>
