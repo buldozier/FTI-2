@@ -28,16 +28,16 @@
           <nav class="sidebar__menu">
             <ul class="menu__header__menu">
               <li class="menu__item">
-                <a href="index.php" class="nav__button <?php echo $header1 ?>">Об институте</a>
+                <a href="index.php" class="nav__button <?= $header1 ?>">Об институте</a>
               </li>
               <li class="menu__item">
-                <a href="programs.php" class="nav__button <?php echo $header2 ?>">Направления подготовки</a>
+                <a href="programs.php" class="nav__button <?= $header2 ?>">Направления подготовки</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="nav__button <?php echo $header3 ?>">Союз студентов ФТИ</a>
+                <a href="#" class="nav__button <?= $header3 ?>">Союз студентов ФТИ</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="nav__button <?php echo $header4 ?>">Полезные контакты</a>
+                <a href="#" class="nav__button <?= $header4 ?>">Полезные контакты</a>
               </li>
             </ul>
           </nav>
@@ -57,16 +57,16 @@
       <nav class="sidebar__menu">
         <ul class="menu__header__menu">
           <li class="menu__item">
-            <a href="index.php" class="nav__button <?php echo $header1 ?>">Об институте</a>
+            <a href="index.php" class="nav__button <?= $header1 ?>">Об институте</a>
           </li>
           <li class="menu__item">
-            <a href="programs.php" class="nav__button <?php echo $header2 ?>">Направления подготовки</a>
+            <a href="programs.php" class="nav__button <?= $header2 ?>">Направления подготовки</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="nav__button <?php echo $header3 ?>">Союз студентов ФТИ</a>
+            <a href="#" class="nav__button <?= $header3 ?>">Союз студентов ФТИ</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="nav__button <?php echo $header4 ?>">Полезные контакты</a>
+            <a href="#" class="nav__button <?= $header4 ?>">Полезные контакты</a>
           </li>
         </ul>
       </nav>

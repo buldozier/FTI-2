@@ -1381,13 +1381,13 @@
           <div class="calculator__subject">
             <label>
               <h3>Русский язык</h3>
-              <input type="number" placeholder="40 - 100" name="russ" required min="40" max="100" />
+              <input type="number" placeholder="40 - 100" name="russ" min="40" max="100" />
             </label>
           </div>
           <div class="calculator__subject">
             <label>
               <h3>Математика</h3>
-              <input type="number" placeholder="39 - 100" name="math" required min="39" max="100" />
+              <input type="number" placeholder="39 - 100" name="math" min="39" max="100" />
             </label>
           </div>
           <div class="calculator__subject">

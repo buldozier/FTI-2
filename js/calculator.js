@@ -61,16 +61,31 @@ form.addEventListener('submit', handleFormSubmit);
 
 async function handleFormSubmit(event) {
   event.preventDefault();
+  const data = new FormData(form);
+  const dataValues = Object.fromEntries(data.entries());
 
-  await fetch('calculator.php', {
-    method: 'POST',
-    body: new FormData(form),
-    headers: {
-      'Content-Type': 'multipart/form-data'
-    },
+
+
+  await fetch('calculator.php?' + new URLSearchParams(dataValues), {
+    method: 'GET',
+    headers: {'Content-Type': 'application/json'},
   })
-    .then(resp => console.log(resp.json()))
-    .catch(err => console.log(err));
+    .then(resp => {
+      return resp.json();
+    })
+    .then(re => {
+      console.log(re);
+    });
+
+  // await fetch('calculator.php', {
+  //   method: 'POST',
+  //   body: new FormData(form),
+  //   headers: {
+  //     'Content-Type': 'multipart/form-data'
+  //   },
+  // })
+  //   .then(resp => console.log(resp.json()))
+  //   .catch(err => console.log(err));
 }
 
 // function handleFormSubmit(event) {
