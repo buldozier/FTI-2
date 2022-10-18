@@ -401,6 +401,109 @@ input[type='number']::-webkit-inner-spin-button {
   background-color: #fcba28;
 }
 
+.response__inner {
+  margin-top: 30px;
+}
+
+.response__inner .container {
+  padding: 0;
+}
+
+.response__form {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.response__object {
+  display: flex;
+  background-color: #f9f4da;
+  border-radius: 10px;
+  padding: 15px;
+  color: #0f0d0e;
+  font-size: 16px;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  margin: auto;
+  width: 310px;
+  gap: 10px;
+  position: relative;
+}
+
+.resp__name {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.resp__code {
+  margin: auto;
+  font-size: 14px;
+}
+
+.resp__score,
+.resp__places {
+  margin-left: auto;
+  position: relative;
+}
+
+.resp__code::before {
+  content: 'Код направления:';
+  position: absolute;
+  left: 15px;
+}
+
+.resp__score::before {
+  content: 'Проходной балл:';
+  position: absolute;
+  left: -283px;
+}
+
+.resp__score::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: 40px;
+  height: 24px;
+  width: 24px;
+  background: url(./../img/icons/check-all.svg);
+  background-size: contain;
+}
+
+.resp__places::before {
+  content: 'Бюджетных мест:';
+  position: absolute;
+  left: -292px;
+}
+
+.resp__places::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 40px;
+  height: 20px;
+  width: 20px;
+  background: url(./../img/icons/people.svg);
+  background-size: contain;
+}
+
+.resp__tests {
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.resp__test {
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #f9f4da;
+}
+
 /* Adaptive */
 
 @media (min-width: 768px) {

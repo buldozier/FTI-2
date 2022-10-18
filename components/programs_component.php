@@ -1413,7 +1413,13 @@
           <button class="submit__ege" type="submit">Показать подходящие направления</button>
         </div>
       </form>
-      <p class="jojo"></p>
+      <div class="response__inner">
+        <div class="container">
+          <div class="response__form">
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

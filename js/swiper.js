@@ -1,5 +1,5 @@
 // Swiper
-const swiper = new Swiper('.swiper', {
+export const swiper = new Swiper('.swiper', {
   // Optional parameters
   spaceBetween: 20,
   allowTouchMove: true,

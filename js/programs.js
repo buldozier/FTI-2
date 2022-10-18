@@ -1,3 +1,4 @@
+import { swiper } from './swiper.js';
 // Bakalavr/magistr swiper
 const bakalavrBtn = document.querySelector('.bakalavr__button');
 const magistrBtn = document.querySelector('.magistr__button');

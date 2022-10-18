@@ -55,18 +55,54 @@ const setValidValue = function (element, minValue) {
 
 const form = document.querySelector('.calculator__form');
 
-console.log(form);
+class CreateResponseObject {
+  constructor(Array) {
+    creteElement('response__object', respForm);
+    const respObjAll = document.querySelectorAll('.response__object');
+    const respObjAllLastElement = respObjAll.length - 1;
+    const respObj = respObjAll[respObjAllLastElement];
+
+    creteElement('resp__code', respObj, Array[0]);
+    creteElement('resp__name', respObj, Array[2]);
+    creteElement('resp__score', respObj, Array[3]);
+    creteElement('resp__places', respObj, Array[4]);
+
+    function creteElement(className, addToElement, content) {
+      const div = document.createElement('div');
+      div.classList.add(className);
+      if (content) {
+        div.innerHTML = content;
+      }
+      addToElement.append(div);
+    }
+  }
+}
 
 form.addEventListener('submit', handleFormSubmit);
 
+const respForm = document.querySelector('.response__form');
+
 async function handleFormSubmit(event) {
   event.preventDefault();
-  const data = new FormData(form);
-  const dataValues = Object.fromEntries(data.entries());
+  const respObjAll = document.querySelectorAll('.response__object');
+  respObjAll.forEach(el => {
+    el.remove();
+  });
 
+  const scoreRuss = document.querySelector('input[name="russ"]');
+  const scoreMath = document.querySelector('input[name="math"]');
+  const scorePhys = document.querySelector('input[name="phys"]');
+  const scoreInf = document.querySelector('input[name="inf"]');
+  const scoreChem = document.querySelector('input[name="chem"]');
+  const egeSum = Number(scoreRuss.value) + Number(scoreMath.value);
 
+  const egeScores = {
+    egeSumPhys: selectTestForSearching(scorePhys),
+    egeSumInf: selectTestForSearching(scoreInf),
+    egeSumChem: selectTestForSearching(scoreChem),
+  };
 
-  await fetch('calculator.php?' + new URLSearchParams(dataValues), {
+  await fetch('calculator.php?' + new URLSearchParams(egeScores), {
     method: 'GET',
     headers: {'Content-Type': 'application/json'},
   })
@@ -74,49 +110,29 @@ async function handleFormSubmit(event) {
       return resp.json();
     })
     .then(re => {
-      console.log(re);
-    });
+      const objPhys = {};
+      const objInf = {};
+      const objChem = {};
 
-  // await fetch('calculator.php', {
-  //   method: 'POST',
-  //   body: new FormData(form),
-  //   headers: {
-  //     'Content-Type': 'multipart/form-data'
-  //   },
-  // })
-  //   .then(resp => console.log(resp.json()))
-  //   .catch(err => console.log(err));
+      createTestObject(re, objPhys, '0');
+      createTestObject(re, objInf, '1');
+      createTestObject(re, objChem, '2');
+
+      const responseObject = Object.assign(objPhys, objInf, objChem);
+
+      for (let element in responseObject) {
+        new CreateResponseObject(responseObject[element]);
+      }
+    })
+    .catch(err => console.error(err));
+
+  function selectTestForSearching(testScore) {
+    return testScore.value ? egeSum + Number(testScore.value) : 0;
+  }
 }
 
-// function handleFormSubmit(event) {
-//   event.preventDefault();
-//   const data = new FormData(form);
-//   const dataValues = Object.fromEntries(data.entries());
-
-//   console.log(dataValues);
-//   const scorePhys = parseInt(dataValues['phys']);
-//   const scoreInf = parseInt(dataValues['inf']);
-//   const scoreChem = parseInt(dataValues['chem']);
-
-//   const egeSum = parseInt(dataValues['russ']) + parseInt(dataValues['math']);
-//   let egeSumPhys = egeSum + scorePhys;
-//   let egeSumInf = egeSum + scoreInf;
-//   let egeSumChem = egeSum + scoreInf;
-
-//   if (scorePhys) {
-//     const objScore = [{
-//       score: scorePhys,
-//     }];
-//     console.log(JSON.stringify(objScore));
-//     sendRequest(objScore);
-//   }
-// }
-
-// async function sendRequest(data) {
-//   await fetch('calculator.php', {
-//     method: 'post',
-//     body: JSON.stringify(data),
-//   })
-//     .then(response => response.json())
-//     .then(data => console.log(data));
-// }
+function createTestObject(re, nameObj, countRe) {
+  re[countRe].forEach(el => {
+    nameObj[el.shift()] = el;
+  });
+}

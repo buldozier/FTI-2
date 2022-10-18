@@ -1376,36 +1376,36 @@
   <div class="calculator__inner">
     <div class="container">
       <h2>Калькулятор ЕГЭ</h2>
-      <form method="post">
+      <form class="calculator__form" method="POST" action="calculator.php">
         <div class="calculator__subjects">
           <div class="calculator__subject">
             <label>
               <h3>Русский язык</h3>
-              <input type="number" placeholder="40 - 100" name="ege_score[russian]" required min="40" max="100" />
+              <input type="number" placeholder="40 - 100" name="russ" min="40" max="100" />
             </label>
           </div>
           <div class="calculator__subject">
             <label>
               <h3>Математика</h3>
-              <input type="number" placeholder="39 - 100" name="ege_score[math]" required min="39" max="100" />
+              <input type="number" placeholder="39 - 100" name="math" min="39" max="100" />
             </label>
           </div>
           <div class="calculator__subject">
             <label>
               <h3>Физика</h3>
-              <input type="number" placeholder="39 - 100" name="ege_score[physics]" min="39" max="100" />
+              <input type="number" placeholder="39 - 100" name="phys" min="39" max="100" />
             </label>
           </div>
           <div class="calculator__subject">
             <label>
               <h3>Информатика</h3>
-              <input type="number" placeholder="44 - 100" name="ege_score[inf]" min="44" max="100" />
+              <input type="number" placeholder="44 - 100" name="inf" min="44" max="100" />
             </label>
           </div>
           <div class="calculator__subject">
             <label>
               <h3>Химия</h3>
-              <input type="number" placeholder="39 - 100" name="ege_score[chemistry]" min="39" max="100" />
+              <input type="number" placeholder="39 - 100" name="chem" min="39" max="100" />
             </label>
           </div>
         </div>
@@ -1413,6 +1413,38 @@
           <button class="submit__ege" type="submit">Показать подходящие направления</button>
         </div>
       </form>
+      <div class="response__inner">
+        <div class="container">
+          <div class="response__form">
+            <div class="response__object">
+              <div class="resp__code">03.03.01</div>
+              <div class="resp__name">Прикладные математика и физика</div>
+              <div class="resp__score">181</div>
+              <div class="resp__places">25</div>
+              <div class="resp__tests">
+                <div class="resp__test math">М</div>
+                <div class="resp__test russian">РЯ</div>
+                <div class="resp__test physics">Ф</div>
+                <div class="resp__test informatics">ИКТ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+
+            <!-- <div class="response__object">
+              <div class="resp__code">03.03.01</div>
+              <div class="resp__name">Прикладные математика и физика</div>
+              <div class="resp__score">181</div>
+              <div class="resp__places">25</div>
+              <div class="resp__tests">
+                <div class="resp__test math">М</div>
+                <div class="resp__test russian">РЯ</div>
+                <div class="resp__test physics">Ф</div>
+                <div class="resp__test informatics">ИКТ</div>
+              </div>
+            </div> -->
