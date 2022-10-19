@@ -399,7 +399,10 @@ input[type='number']::-webkit-inner-spin-button {
   color: #0f0d0e;
   border: 1px solid #fcba28;
   background-color: #fcba28;
+  cursor: pointer;
 }
+
+/* Calculator response */
 
 .response__inner {
   margin-top: 30px;
@@ -412,7 +415,8 @@ input[type='number']::-webkit-inner-spin-button {
 .response__form {
   gap: 15px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .response__object {
@@ -423,24 +427,26 @@ input[type='number']::-webkit-inner-spin-button {
   color: #0f0d0e;
   font-size: 16px;
   flex-direction: column;
-  justify-content: center;
-  vertical-align: middle;
-  margin: auto;
-  width: 310px;
+  width: 300px;
   gap: 10px;
   position: relative;
 }
 
 .resp__name {
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  display: flex;
+  margin: 10px auto 10px;
   font-weight: bold;
   text-align: center;
+  height: 38px;
+  align-items: center;
+}
+
+.resp__name p {
+  margin: auto;
 }
 
 .resp__code {
-  margin: auto;
+  margin: 0 auto;
   font-size: 14px;
 }
 
@@ -459,7 +465,7 @@ input[type='number']::-webkit-inner-spin-button {
 .resp__score::before {
   content: 'Проходной балл:';
   position: absolute;
-  left: -283px;
+  left: -273px;
 }
 
 .resp__score::after {
@@ -476,13 +482,13 @@ input[type='number']::-webkit-inner-spin-button {
 .resp__places::before {
   content: 'Бюджетных мест:';
   position: absolute;
-  left: -292px;
+  left: -282px;
 }
 
 .resp__places::after {
   content: '';
   position: absolute;
-  top: 0;
+  top: -1px;
   right: 40px;
   height: 20px;
   width: 20px;
@@ -685,6 +691,107 @@ input[type='number']::-webkit-inner-spin-button {
     width: 29px;
     height: 29px;
   }
+
+  /* Calculator */
+
+  .calculator__subjects {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+  }
+
+  .calculator__subjects input {
+    font-size: 18px;
+  }
+
+  .calculator__subject label {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .submit__ege {
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .submit__ege:hover {
+    background-color: #f9f4da;
+    border-color: #f9f4da;
+  }
+
+  /* Calculator response */
+
+  .response__inner {
+    margin-top: 50px;
+  }
+
+  .response__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .response__object {
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    width: 940px;
+    height: 40px;
+    gap: 0;
+    position: relative;
+  }
+
+  .resp__name {
+    margin: 0;
+    width: 350px;
+    height: auto;
+    justify-content: center;
+  }
+
+  .resp__code {
+    margin: auto 20px;
+    font-size: 18px;
+  }
+
+  .resp__score {
+    margin: auto 50px auto 75px;
+  }
+
+  .resp__places {
+    margin: auto 75px auto 50px;
+  }
+
+  .resp__code::before {
+    content: '';
+  }
+
+  .resp__score::before {
+    content: '';
+  }
+
+  .resp__score::after {
+    content: '';
+    top: 0;
+  }
+
+  .resp__places::before {
+    content: '';
+  }
+
+  .resp__places::after {
+    content: '';
+    top: 0;
+  }
+
+  .resp__tests {
+    width: 220px;
+
+    justify-content: flex-start;
+    font-size: 14px;
+    margin: auto 0;
+    gap: 5px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -742,5 +849,33 @@ input[type='number']::-webkit-inner-spin-button {
 
   .programs__slider__footer__magistr {
     gap: 50px;
+  }
+
+  /* Calculator */
+
+  .calculator__subjects {
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+  }
+
+  .calculator__subject {
+    width: 185px;
+  }
+
+  /* Calculator response */
+  .response__object {
+    width: 1140px;
+  }
+
+  .resp__code {
+    margin: auto 40px;
+  }
+
+  .resp__score {
+    margin: auto 75px auto 100px;
+  }
+
+  .resp__places {
+    margin: auto 100px auto 75px;
   }
 }

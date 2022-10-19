@@ -55,21 +55,45 @@ const setValidValue = function (element, minValue) {
 
 const form = document.querySelector('.calculator__form');
 
-class CreateResponseObject {
+class ResponseObject {
   constructor(Array) {
-    creteElement('response__object', respForm);
+    createElement('response__inner', form);
+    const respInner = document.querySelector('.response__inner');
+    createElement('response__form', respInner);
+    const respForm = document.querySelector('.response__form');
+    createElement('response__object', respForm);
     const respObjAll = document.querySelectorAll('.response__object');
     const respObjAllLastElement = respObjAll.length - 1;
     const respObj = respObjAll[respObjAllLastElement];
 
-    creteElement('resp__code', respObj, Array[0]);
-    creteElement('resp__name', respObj, Array[2]);
-    creteElement('resp__score', respObj, Array[3]);
-    creteElement('resp__places', respObj, Array[4]);
+    createElement('resp__code', respObj, Array[0]);
+    createElement('resp__name', respObj, Array[2]);
+    createElement('resp__score', respObj, Array[3]);
+    createElement('resp__places', respObj, Array[4]);
+    createElement('resp__tests', respObj);
 
-    function creteElement(className, addToElement, content) {
+    const respTestsAll = document.querySelectorAll('.resp__tests');
+    const respTestsAllLastElement = respTestsAll.length - 1;
+    const respTests = respTestsAll[respTestsAllLastElement];
+    createElement('resp__test', respTests, 'М', 'math');
+    createElement('resp__test', respTests, 'РЯ', 'russian');
+    createElement('resp__test', respTests, 'Ф', 'physics');
+    console.log(typeof Array[6]);
+    if (Array[6] === '1') {
+      createElement('resp__test', respTests, 'ИКТ', 'informatics');
+    }
+
+    if (Array[7] === '1') {
+      createElement('resp__test', respTests, 'Х', 'chemistry');
+    }
+
+    function createElement(className, addToElement, content, secondClassName) {
       const div = document.createElement('div');
       div.classList.add(className);
+      if (secondClassName) {
+        div.classList.add(secondClassName);
+      }
+
       if (content) {
         div.innerHTML = content;
       }
@@ -121,7 +145,7 @@ async function handleFormSubmit(event) {
       const responseObject = Object.assign(objPhys, objInf, objChem);
 
       for (let element in responseObject) {
-        new CreateResponseObject(responseObject[element]);
+        new ResponseObject(responseObject[element]);
       }
     })
     .catch(err => console.error(err));
