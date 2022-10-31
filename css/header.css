@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0f0d0e;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #fcba28;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -276,45 +285,3 @@ img {
     width: 100%;
   }
 }
-
-/* @media (min-width: 1024px) {
-  .nav__button:hover:after {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .toggle__sidebar {
-    display: none;
-  }
-}
-
-@media (max-width: 1275px) and (min-width: 1024px) {
-  .container__header {
-    width: 870px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container__header {
-    margin: 0 15px;
-  }
-
-  .sidebar {
-    display: none;
-  }
-
-  .sidebar__mobile__active {
-    display: block;
-    align-items: center;
-  }
-
-  .menu__header__menu {
-    flex-direction: column;
-    transform: translate(500px, 0);
-  }
-
-  
-  }
-}  */

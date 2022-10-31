@@ -404,6 +404,11 @@ input[type='number']::-webkit-inner-spin-button {
 
 /* Calculator response */
 
+.response__rejected {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .response__inner {
   margin-top: 30px;
 }
@@ -417,6 +422,10 @@ input[type='number']::-webkit-inner-spin-button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.response__header {
+  display: none;
 }
 
 .response__object {
@@ -732,12 +741,47 @@ input[type='number']::-webkit-inner-spin-button {
     justify-content: center;
   }
 
+  .response__header {
+    display: flex;
+    padding: 15px;
+    height: 40px;
+    width: 100%;
+    color: #0f0d0e;
+    font-weight: bold;
+    background-color: #f9f4da;
+    border-radius: 10px;
+    align-self: center;
+  }
+
+  .response__header div {
+    align-self: center;
+    text-align: center;
+  }
+
+  .header__code {
+    margin-left: 40px;
+
+  }
+  .header__name {
+    margin-left: 120px;
+  }
+  .header__score {
+    margin-left: 80px;
+  }
+  .header__places {
+
+  }
+  .header__tests {
+    margin-left: 10px;
+  }
+
+
+
   .response__object {
     display: flex;
     font-size: 18px;
     flex-direction: row;
     width: 940px;
-    height: 40px;
     gap: 0;
     position: relative;
   }
@@ -745,6 +789,7 @@ input[type='number']::-webkit-inner-spin-button {
   .resp__name {
     margin: 0;
     width: 350px;
+    font-weight: normal;
     height: auto;
     justify-content: center;
   }
@@ -755,11 +800,11 @@ input[type='number']::-webkit-inner-spin-button {
   }
 
   .resp__score {
-    margin: auto 50px auto 75px;
+    margin: auto 45px auto 80px;
   }
 
   .resp__places {
-    margin: auto 75px auto 50px;
+    margin: auto 45px auto 80px;
   }
 
   .resp__code::before {
@@ -787,7 +832,7 @@ input[type='number']::-webkit-inner-spin-button {
   .resp__tests {
     width: 220px;
 
-    justify-content: flex-start;
+    justify-content: center;
     font-size: 14px;
     margin: auto 0;
     gap: 5px;
@@ -863,9 +908,29 @@ input[type='number']::-webkit-inner-spin-button {
   }
 
   /* Calculator response */
+  .header__code {
+    margin-left: 60px;
+
+  }
+  .header__name {
+    margin-left: 140px;
+  }
+  .header__score {
+    margin-left: 80px;
+  }
+  .header__places {
+    margin-left: 30px;
+
+  }
+  .header__tests {
+    margin-left: 30px;
+  }
+
   .response__object {
     width: 1140px;
   }
+
+  
 
   .resp__code {
     margin: auto 40px;
@@ -876,6 +941,6 @@ input[type='number']::-webkit-inner-spin-button {
   }
 
   .resp__places {
-    margin: auto 100px auto 75px;
+    margin: auto 75px auto 100px;
   }
 }

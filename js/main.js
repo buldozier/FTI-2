@@ -16,7 +16,6 @@ document.addEventListener('click', e => {
 
 // Обработчик нажатия на кнопку сайдбара
 sidebarToggleBtn.addEventListener('click', () => {
-  console.log('123');
   toggleSidebar();
   if (sidebar.classList.contains('sidebar__mobile__active')) {
     document.body.style.overflow = 'hidden';
@@ -43,5 +42,5 @@ document.addEventListener('scroll', () => {
 });
 
 btnToTop.addEventListener('click', () => {
-  window.scrollTo(0, 0);
+  scrollTo(0, 0);
 });
