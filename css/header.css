@@ -54,7 +54,7 @@ img {
   padding-top: 100px;
   margin-bottom: 50px;
   background: url(./../img/icons/FTI_TEXT.svg) no-repeat 100% 7%;
-  background-size: 150px;
+  background-size: 100px;
 }
 
 @media (max-width: 1023px) {
@@ -213,9 +213,18 @@ img {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .page__wrap {
+    background-size: 200px;
+    background: url(./../img/icons/FTI_TEXT.svg) no-repeat 100% 25%;
+  }
+}
+
 @media (min-width: 1024px) {
   .page__wrap {
     margin-bottom: 100px;
+    background-size: 350px;
+    background: url(./../img/icons/FTI_TEXT.svg) no-repeat 100% 0%;
   }
 
   .logo__mobile,
@@ -281,6 +290,10 @@ img {
 }
 
 @media (min-width: 1200px) {
+  .page__wrap {
+    background-size: 350px;
+  }
+
   .container__header {
     width: 100%;
   }

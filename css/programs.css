@@ -69,7 +69,7 @@
   margin-right: 15px;
   background-color: #231f20;
   border-radius: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   position: relative;
   overflow: hidden;
 }
@@ -351,6 +351,10 @@
 
 /* Calculator */
 
+.calculator__inner {
+  margin-bottom: 50px;
+}
+
 .calculator__subjects {
   display: flex;
   flex-direction: column;
@@ -519,6 +523,73 @@ input[type='number']::-webkit-inner-spin-button {
   color: #f9f4da;
 }
 
+/* enrollee information */
+
+.information__inner {
+}
+
+.information__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.link {
+  display: flex;
+  width: 325px;
+  position: relative;
+}
+
+.link a {
+  margin-left: 40px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #f9f4da;
+  font-size: 14px;
+}
+
+.link a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./../img/icons/info_circle.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.information__docs {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.doc {
+  display: flex;
+  width: 325px;
+  position: relative;
+}
+
+.doc a {
+  margin-left: 40px;
+  color: #f9f4da;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.doc a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./../img/icons/filetype_pdf_yellow.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
 /* Adaptive */
 
 @media (min-width: 768px) {
@@ -529,10 +600,6 @@ input[type='number']::-webkit-inner-spin-button {
 
   .swiper {
     width: 580px;
-  }
-
-  .page__wrap {
-    background-size: 250px;
   }
 
   .about__programs__img img {
@@ -558,10 +625,6 @@ input[type='number']::-webkit-inner-spin-button {
   .programs__slider__inner .container {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  .page__wrap {
-    background-size: 350px;
   }
 
   .about__programs__inner {
@@ -760,7 +823,6 @@ input[type='number']::-webkit-inner-spin-button {
 
   .header__code {
     margin-left: 40px;
-
   }
   .header__name {
     margin-left: 120px;
@@ -769,13 +831,10 @@ input[type='number']::-webkit-inner-spin-button {
     margin-left: 80px;
   }
   .header__places {
-
   }
   .header__tests {
     margin-left: 10px;
   }
-
-
 
   .response__object {
     display: flex;
@@ -837,13 +896,54 @@ input[type='number']::-webkit-inner-spin-button {
     margin: auto 0;
     gap: 5px;
   }
+
+  /* enrollee information */
+
+  .information__links {
+    gap: 50px;
+  }
+
+  .link {
+    width: 460px;
+  }
+
+  .link a {
+    margin-left: 70px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+
+  .link a::before {
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .information__docs {
+    margin-top: 50px;
+    gap: 50px;
+  }
+
+  .doc {
+    width: 460px;
+  }
+
+  .doc a {
+    margin-left: 70px;
+    font-size: 18px;
+  }
+
+  .doc a::before {
+    top: 0px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (min-width: 1200px) {
-  .page__wrap {
-    background-size: 500px;
-  }
-
   .container {
     max-width: 1170px;
   }
@@ -910,7 +1010,6 @@ input[type='number']::-webkit-inner-spin-button {
   /* Calculator response */
   .header__code {
     margin-left: 60px;
-
   }
   .header__name {
     margin-left: 140px;
@@ -920,7 +1019,6 @@ input[type='number']::-webkit-inner-spin-button {
   }
   .header__places {
     margin-left: 30px;
-
   }
   .header__tests {
     margin-left: 30px;
@@ -929,8 +1027,6 @@ input[type='number']::-webkit-inner-spin-button {
   .response__object {
     width: 1140px;
   }
-
-  
 
   .resp__code {
     margin: auto 40px;
@@ -942,5 +1038,14 @@ input[type='number']::-webkit-inner-spin-button {
 
   .resp__places {
     margin: auto 75px auto 100px;
+  }
+
+  /* enrollee information */
+
+  .link {
+    width: 560px;
+  }
+  .doc {
+    width: 560px;
   }
 }

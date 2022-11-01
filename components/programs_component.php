@@ -1413,7 +1413,57 @@
           <button class="submit__ege" type="submit">Показать подходящие направления</button>
         </div>
       </form>
-
+    </div>
+  </div>
+  <div class="information__inner">
+    <div class="container">
+      <h2>Информация для поступающих</h2>
+      <div class="information__links">
+        <div class="link">
+          <a href="https://priem.urfu.ru/#/">Личный кабинет абитуриента</a>
+        </div>
+        <div class="link">
+          <a href="https://urfu.ru/ru/applicant/">Абитуриентам УрФУ</a>
+        </div>
+        <div class="link">
+          <a href="https://urfu.ru/priemurfu/">Бакалавриат УрФУ</a>
+        </div>
+        <div class="link">
+          <a href="https://masters.urfu.ru">Магистратура УрФУ</a>
+        </div>
+      </div>
+      <div class="information__docs">
+        <div class="doc">
+          <a href="/docs/Pravila_priema_bakalavriat_i_specialitet_2022.pdf" target="_blank"
+            >Правила приема граждан на обучение по программам бакалавриата и специалитета</a
+          >
+        </div>
+        <div class="doc">
+          <a href="docs/Pravila_priema_magistratura_2022.pdf" target="_blank"
+            >Правила приема граждан на обучение по программам магистратуры</a
+          >
+        </div>
+        <div class="doc">
+          <a href="docs/Pravila_priema_2022.pdf" target="_blank"
+            >Алгоритм поступления в 2022 году (бакалавриат и специалитет)</a
+          >
+        </div>
+        <div class="doc">
+          <a href="docs/Informacija_o_porjadke_ucheta_individualnykh_dostizhenii.pdf" target="_blank"
+            >Информация о порядке учета индивидуальных достижений поступающих</a
+          >
+        </div>
+        <div class="doc">
+          <a href="docs/Perechen_dokumentov_dlja_postupajushchikh_s_osobymi_pravami.pdf" target="_blank"
+            >Перечень документов для поступающих с особыми правами</a
+          >
+        </div>
+        <div class="doc">
+          <a href="docs/Lgoty_pobediteljam_i_prizeram_olimpiad.pdf" target="_blank"
+            >Льготы победителям и призерам олимпиад</a
+          >
+        </div>
+      </div>
     </div>
   </div>
 </div>

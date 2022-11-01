@@ -242,10 +242,6 @@
     max-width: 680px;
   }
 
-  .page__wrap {
-    background-size: 250px;
-  }
-
   .about__buttons {
     flex-direction: row;
     justify-content: center;
@@ -282,10 +278,6 @@
 @media (min-width: 1024px) {
   .container {
     max-width: 970px;
-  }
-
-  .page__wrap {
-    background-size: 350px;
   }
 
   .about__inner {
@@ -430,10 +422,6 @@
 }
 
 @media (min-width: 1200px) {
-  .page__wrap {
-    background-size: 500px;
-  }
-
   .about__top__content {
     justify-content: space-between;
   }
