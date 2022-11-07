@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: medium;
+  font-weight: 500;
+  src: url(/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: 700;
+  src: url(/fonts/Roboto-Bold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +71,7 @@ img {
   display: block;
 }
 
-.page__wrap {
+.page_wrap {
   padding-top: 100px;
   margin-bottom: 50px;
   background: url(./../img/icons/FTI_TEXT.svg) no-repeat 100% 7%;
@@ -76,29 +97,29 @@ img {
   }
 }
 
-.container__header {
+.container_header {
   display: none;
 }
 
-.logo__mobile {
+.logo_mobile {
   position: absolute;
   top: 15px;
   left: 15px;
 }
 
-.logo__mobile img {
+.logo_mobile img {
   width: 50px;
   height: 50px;
 }
 
-.toggle__sidebar {
+.toggle_sidebar {
   z-index: 10;
   position: absolute;
   top: 25px;
   right: 25px;
 }
 
-.menu__icon__wrapper {
+.menu_icon_wrapper {
   width: 30px;
   height: 30px;
   display: flex;
@@ -109,14 +130,14 @@ img {
   background-color: transparent;
 }
 
-.menu__icon {
+.menu_icon {
   position: relative;
   width: 30px;
   height: 5px;
   background-color: #f9f4da;
 }
 
-.menu__icon::before {
+.menu_icon::before {
   position: absolute;
   left: 0;
   top: -10px;
@@ -128,7 +149,7 @@ img {
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-.menu__icon::after {
+.menu_icon::after {
   position: absolute;
   left: 0;
   top: 10px;
@@ -139,25 +160,25 @@ img {
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-.menu__icon.menu__icon__active {
+.menu_icon.menu_icon_active {
   background-color: transparent;
 }
 
-.menu__icon.menu__icon__active::before {
+.menu_icon.menu_icon_active::before {
   transform: rotate(45deg);
   background-color: #0f0d0e;
   top: 0;
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
-.menu__icon.menu__icon__active::after {
+.menu_icon.menu_icon_active::after {
   transform: rotate(-45deg);
   background-color: #0f0d0e;
   top: 0;
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
-.sidebar__mobile {
+.sidebar_mobile {
   display: none;
   position: absolute;
   width: calc(100% - 30px);
@@ -171,12 +192,12 @@ img {
   z-index: 5;
 }
 
-.sidebar__mobile__active {
+.sidebar_mobile_active {
   display: flex;
   justify-content: center;
 }
 
-.menu__header__menu {
+.menu_header_menu {
   margin: auto 0;
   display: flex;
   flex-direction: column;
@@ -185,12 +206,12 @@ img {
   padding: 0;
 }
 
-.menu__item {
+.menu_item {
   list-style: none;
   align-self: center;
 }
 
-.menu__item a {
+.menu_item a {
   display: block;
   text-decoration: none;
   color: #0f0d0e;
@@ -198,7 +219,7 @@ img {
   position: relative;
 }
 
-.nav__button:after {
+.nav_button:after {
   content: '';
   height: 1px;
   width: 0;
@@ -209,30 +230,30 @@ img {
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.selected__nav:after {
+.selected_nav:after {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  .page__wrap {
+  .page_wrap {
     background-size: 200px;
     background: url(./../img/icons/FTI_TEXT.svg) no-repeat 100% 25%;
   }
 }
 
 @media (min-width: 1024px) {
-  .page__wrap {
+  .page_wrap {
     margin-bottom: 100px;
     background-size: 350px;
     background: url(./../img/icons/FTI_TEXT.svg) no-repeat 100% 0%;
   }
 
-  .logo__mobile,
-  .toggle__sidebar {
+  .logo_mobile,
+  .toggle_sidebar {
     display: none;
   }
 
-  .container__header {
+  .container_header {
     display: flex;
     width: 970px;
     justify-content: space-between;
@@ -244,11 +265,11 @@ img {
     font-weight: 500;
   }
 
-  .menu__header__menu {
+  .menu_header_menu {
     flex-direction: row;
   }
 
-  .menu__item a {
+  .menu_item a {
     display: block;
     text-decoration: none;
     color: #f9f4da;
@@ -256,11 +277,11 @@ img {
     position: relative;
   }
 
-  .nav__button:hover:after {
+  .nav_button:hover:after {
     width: 100%;
   }
 
-  .container__header {
+  .container_header {
     max-width: 1170px;
     margin: 0 auto;
     padding: 30px 15px 0px 15px;
@@ -268,33 +289,33 @@ img {
 
   /* Header */
 
-  .header__inner {
+  .header_inner {
     display: flex;
     justify-content: space-between;
   }
 
-  .header__logo {
+  .header_logo {
     width: 80px;
     height: 80px;
   }
 
-  .header__logo a {
+  .header_logo a {
     display: inline-block;
     text-decoration: none;
     height: 80px;
   }
 
-  .header__logo a img {
+  .header_logo a img {
     width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
-  .page__wrap {
+  .page_wrap {
     background-size: 350px;
   }
 
-  .container__header {
+  .container_header {
     width: 100%;
   }
 }

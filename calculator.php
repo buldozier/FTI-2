@@ -28,9 +28,3 @@ $data['0'] = $phys_list->fetch_all();
 $data['1'] = $inf_list->fetch_all();
 $data['2'] = $chem_list->fetch_all();
 echo json_encode($data);
-
-// for($i = 0; $i < count($phys_list); $i++) {
-// 	for($i = 0; $i < count($inf_list); $i++) {
-	
-// 	}
-// }

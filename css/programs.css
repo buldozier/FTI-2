@@ -4,30 +4,32 @@
   padding: 0 15px;
   position: relative;
 }
+
 /* About programs */
-.about__programs__inner {
+
+.about_programs_inner {
   margin-bottom: 50px;
 }
 
-.about__programs__flex {
+.about_programs_flex {
   display: flex;
   gap: 30px;
   flex-direction: column;
   color: #0f0d0e;
 }
 
-.about__programs__img {
+.about_programs_img {
   display: flex;
   justify-content: center;
 }
 
-.about__programs__img img {
+.about_programs_img img {
   width: 310px;
   border-radius: 10px;
   box-shadow: 3px 3px #fcba28;
 }
 
-.about__programs__info {
+.about_programs_info {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -35,21 +37,21 @@
   margin-right: auto;
 }
 
-.about__programs__info h2 {
+.about_programs_info h2 {
   margin-bottom: 0;
   padding: 20px;
 }
 
-.about__programs__count h2 {
+.about_programs_count h2 {
   padding-bottom: 0;
 }
 
-.about__programs__info p {
+.about_programs_info p {
   padding-bottom: 20px;
   padding-left: 20px;
 }
 
-.about__programs {
+.about_programs {
   width: 310px;
   background-color: #f9f4da;
   border-radius: 10px;
@@ -60,11 +62,11 @@
 
 /* Programs slider */
 
-.slider__hidden {
+.slider_hidden {
   display: none !important;
 }
 
-.programs__slider__inner {
+.programs_slider_inner {
   margin-left: 15px;
   margin-right: 15px;
   background-color: #231f20;
@@ -74,34 +76,34 @@
   overflow: hidden;
 }
 
-.programs__slider__inner .container {
+.programs_slider_inner .container {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.program__slider__top {
+.program_slider_top {
   display: flex;
   justify-content: space-between;
 }
 
-.program__slider__top__content {
+.program_slider_top_content {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 30px;
 }
 
-.programs__slider__header {
+.programs_slider_header {
   margin-bottom: 0;
 }
 
-.programs__slider__top__buttons {
+.programs_slider_top_buttons {
   display: flex;
   font-size: 12px;
   gap: 20px;
 }
 
-.programs__slider__top__button {
+.programs_slider_top_button {
   color: #fcba28;
   padding: 10px;
   border: 1px solid #fcba28;
@@ -113,7 +115,7 @@
   user-select: none;
 }
 
-.button__checked {
+.button_checked {
   color: #0f0d0e;
   border: 1px solid #fcba28;
   background-color: #fcba28;
@@ -125,13 +127,12 @@
   overflow: inherit !important;
 }
 
-.programs__slider__card {
-  /* width: 280px; */
+.programs_slider_card {
   background-color: #f9f4da;
   border-radius: 10px;
 }
 
-.programs__slider__title {
+.programs_slider_title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -139,36 +140,36 @@
   padding: 15px 15px 0 15px;
 }
 
-.programs__slider__title__header {
+.programs_slider_title_header {
   display: flex;
   text-align: center;
   height: 48px;
 }
 
-.programs__slider__title__header h4 {
+.programs_slider_title_header h4 {
   margin: auto;
 }
 
-.programs__small__title {
+.programs_small_title {
   font-size: 18px;
 }
 
-.programs__small__title__chemistry {
+.programs_small_title_chemistry {
   font-size: 14px;
 }
 
-.magistr__small__title {
+.magistr_small_title {
   font-size: 14px;
 }
 
-.programs__slider__title__bottom {
+.programs_slider_title_bottom {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: 12px;
 }
 
-.programs__stage {
+.programs_stage {
   padding: 5px 10px;
   border-radius: 10px;
   margin: 0 auto;
@@ -187,38 +188,38 @@
   background-color: #540096;
 }
 
-.programs__direction__code {
+.programs_direction_code {
   align-self: center;
 }
 
-.programs__slider__description {
+.programs_slider_description {
   padding: 15px 15px 15px 30px;
   height: 250px;
 }
 
-.programs__slider__description__magistr {
+.programs_slider_description_magistr {
   padding: 15px;
   font-size: 14px;
   height: 310px;
 }
 
-.programs__slider__footer {
+.programs_slider_footer {
   display: flex;
   gap: 15px;
   padding: 0 15px 15px 15px;
 }
 
-.programs__slider__footer__magistr {
+.programs_slider_footer_magistr {
   display: flex;
   gap: 20px;
   padding: 0 15px 15px 15px;
 }
 
-.places__and__score {
+.places_and_score {
   width: 114px;
 }
 
-.programs__slider__score {
+.programs_slider_score {
   margin-top: 10px;
 }
 
@@ -228,16 +229,16 @@
   position: relative;
 }
 
-.programs__slider__places a {
+.programs_slider_places a {
   display: inline-block;
   font-size: 0;
 }
 
-.programs__slider__places a + a {
+.programs_slider_places a + a {
   margin-left: 20px;
 }
 
-.programs__slider__places > .number::after {
+.programs_slider_places > .number::after {
   content: '';
   position: absolute;
   top: 0;
@@ -248,7 +249,7 @@
   background-size: contain;
 }
 
-.programs__slider__score > .number::after {
+.programs_slider_score > .number::after {
   content: '';
   position: absolute;
   top: 0;
@@ -263,17 +264,17 @@
   margin-top: 10px;
 }
 
-.programs__slider__places a + .text {
+.programs_slider_places a + .text {
   margin-top: 5px;
 }
 
-.programs__slider__subjects {
+.programs_slider_subjects {
   display: flex;
   gap: 10px;
   flex-direction: column;
 }
 
-.physics__and__chemistry {
+.physics_and_chemistry {
   display: flex;
   gap: 5px;
 }
@@ -306,7 +307,7 @@
   background-color: #ff5c00;
 }
 
-.programs__slider__button {
+.programs_slider_button {
   display: inline-block;
   padding: 10px;
   border: 1px solid #0f0d0e;
@@ -318,17 +319,17 @@
   margin-bottom: 40px;
 }
 
-.programs__slider__button {
+.programs_slider_button {
   color: #0f0d0e;
   text-decoration: none;
   font-size: 14px;
 }
 
-.programs__slider__button:active {
+.programs_slider_button:active {
   background-color: #0f0d0e;
 }
 
-.programs__slider__button:active {
+.programs_slider_button:active {
   color: #f9f4da;
 }
 
@@ -351,11 +352,11 @@
 
 /* Calculator */
 
-.calculator__inner {
+.calculator_inner {
   margin-bottom: 50px;
 }
 
-.calculator__subjects {
+.calculator_subjects {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -363,11 +364,11 @@
   margin-bottom: 30px;
 }
 
-.calculator__subjects h3 {
+.calculator_subjects h3 {
   align-self: center;
 }
 
-.calculator__subjects input {
+.calculator_subjects input {
   padding: 15px;
   color: #f9f4da;
   border: 1px solid #f9f4da;
@@ -378,7 +379,7 @@
   text-align: center;
 }
 
-.calculator__subjects__invalid {
+.calculator_subjects_invalid {
   border-color: #9d1717 !important;
 }
 
@@ -387,17 +388,17 @@ input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.calculator__subject label {
+.calculator_subject label {
   display: flex;
   justify-content: space-between;
 }
 
-.submit__btn {
+.submit_btn {
   display: flex;
   justify-content: center;
 }
 
-.submit__ege {
+.submit_ege {
   padding: 15px;
   border-radius: 10px;
   color: #0f0d0e;
@@ -408,31 +409,31 @@ input[type='number']::-webkit-inner-spin-button {
 
 /* Calculator response */
 
-.response__rejected {
+.response_rejected {
   margin-top: 20px;
   text-align: center;
 }
 
-.response__inner {
+.response_inner {
   margin-top: 30px;
 }
 
-.response__inner .container {
+.response_inner .container {
   padding: 0;
 }
 
-.response__form {
+.response_form {
   gap: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.response__header {
+.response_header {
   display: none;
 }
 
-.response__object {
+.response_object {
   display: flex;
   background-color: #f9f4da;
   border-radius: 10px;
@@ -445,7 +446,7 @@ input[type='number']::-webkit-inner-spin-button {
   position: relative;
 }
 
-.resp__name {
+.resp_name {
   display: flex;
   margin: 10px auto 10px;
   font-weight: bold;
@@ -454,34 +455,34 @@ input[type='number']::-webkit-inner-spin-button {
   align-items: center;
 }
 
-.resp__name p {
+.resp_name p {
   margin: auto;
 }
 
-.resp__code {
+.resp_code {
   margin: 0 auto;
   font-size: 14px;
 }
 
-.resp__score,
-.resp__places {
+.resp_score,
+.resp_places {
   margin-left: auto;
   position: relative;
 }
 
-.resp__code::before {
+.resp_code::before {
   content: 'Код направления:';
   position: absolute;
   left: 15px;
 }
 
-.resp__score::before {
+.resp_score::before {
   content: 'Проходной балл:';
   position: absolute;
   left: -273px;
 }
 
-.resp__score::after {
+.resp_score::after {
   content: '';
   position: absolute;
   top: -2px;
@@ -492,13 +493,13 @@ input[type='number']::-webkit-inner-spin-button {
   background-size: contain;
 }
 
-.resp__places::before {
+.resp_places::before {
   content: 'Бюджетных мест:';
   position: absolute;
   left: -282px;
 }
 
-.resp__places::after {
+.resp_places::after {
   content: '';
   position: absolute;
   top: -1px;
@@ -509,7 +510,7 @@ input[type='number']::-webkit-inner-spin-button {
   background-size: contain;
 }
 
-.resp__tests {
+.resp_tests {
   display: flex;
   font-size: 14px;
   justify-content: center;
@@ -517,18 +518,15 @@ input[type='number']::-webkit-inner-spin-button {
   margin-top: 10px;
 }
 
-.resp__test {
+.resp_test {
   padding: 5px 10px;
   border-radius: 10px;
   color: #f9f4da;
 }
 
-/* enrollee information */
+/* Enrollee information */
 
-.information__inner {
-}
-
-.information__links {
+.information_links {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -559,7 +557,7 @@ input[type='number']::-webkit-inner-spin-button {
   height: 30px;
 }
 
-.information__docs {
+.information_docs {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -598,21 +596,25 @@ input[type='number']::-webkit-inner-spin-button {
     margin: 0 auto;
   }
 
-  .swiper {
-    width: 580px;
-  }
+  /* About programs */
 
-  .about__programs__img img {
+  .about_programs_img img {
     width: 500px;
   }
 
-  .about__programs__info {
+  .about_programs_info {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .programs__slider__top__buttons {
+  /* Programs slider */
+
+  .swiper {
+    width: 580px;
+  }
+
+  .programs_slider_top_buttons {
     font-size: 18px;
   }
 }
@@ -622,38 +624,42 @@ input[type='number']::-webkit-inner-spin-button {
     max-width: 970px;
   }
 
-  .programs__slider__inner .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+  /* About programs */
 
-  .about__programs__inner {
+  .about_programs_inner {
     margin-bottom: 100px;
   }
 
-  .about__programs__flex {
+  .about_programs_flex {
     flex-direction: row-reverse;
   }
 
-  .about__programs__img img {
+  .about_programs_img img {
     box-shadow: 5px 5px #fcba28;
   }
 
-  .about__programs {
+  .about_programs {
     width: 340px;
     box-shadow: 5px 5px #fcba28;
   }
 
-  .about__programs__info {
+  .about_programs_info {
     flex-direction: column;
     margin-left: 0;
     margin-right: auto;
   }
 
-  .about__programs__img {
+  .about_programs_img {
     width: 500px;
     height: 333px;
     margin: auto 0;
+  }
+
+  /* Programs slider */
+
+  .programs_slider_inner .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .swiper {
@@ -707,41 +713,41 @@ input[type='number']::-webkit-inner-spin-button {
     transform: rotate(90deg);
   }
 
-  .programs__slider__title__bottom {
+  .programs_slider_title_bottom {
     flex-direction: row;
     font-size: 12px;
   }
 
-  .programs__slider__title__header {
+  .programs_slider_title_header {
     height: 58px;
   }
 
-  .programs__small__title__chemistry,
+  .programs_small_title_chemistry,
   .text {
     font-size: 16px;
   }
 
-  .programs__slider__description {
+  .programs_slider_description {
     font-size: 14px;
   }
 
-  .magistr__small__title {
+  .magistr_small_title {
     font-size: 16px;
   }
 
-  .programs__slider__button {
+  .programs_slider_button {
     font-size: 16px;
   }
 
-  .programs__slider__button:hover {
+  .programs_slider_button:hover {
     background-color: #0f0d0e;
   }
 
-  .programs__slider__button:hover {
+  .programs_slider_button:hover {
     color: #f9f4da;
   }
 
-  .places__and__score {
+  .places_and_score {
     width: 130px;
   }
 
@@ -749,62 +755,62 @@ input[type='number']::-webkit-inner-spin-button {
     font-size: 24px;
   }
 
-  .programs__slider__places > .number::after {
+  .programs_slider_places > .number::after {
     height: 29px;
     width: 29px;
   }
 
-  .programs__slider__score > .number::after {
+  .programs_slider_score > .number::after {
     height: 29px;
     width: 29px;
   }
 
-  .programs__slider__places a img {
+  .programs_slider_places a img {
     width: 29px;
     height: 29px;
   }
 
   /* Calculator */
 
-  .calculator__subjects {
+  .calculator_subjects {
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 50px;
   }
 
-  .calculator__subjects input {
+  .calculator_subjects input {
     font-size: 18px;
   }
 
-  .calculator__subject label {
+  .calculator_subject label {
     flex-direction: column;
     gap: 20px;
   }
 
-  .submit__ege {
+  .submit_ege {
     font-size: 18px;
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   }
 
-  .submit__ege:hover {
+  .submit_ege:hover {
     background-color: #f9f4da;
     border-color: #f9f4da;
   }
 
   /* Calculator response */
 
-  .response__inner {
+  .response_inner {
     margin-top: 50px;
   }
 
-  .response__form {
+  .response_form {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
   }
 
-  .response__header {
+  .response_header {
     display: flex;
     padding: 15px;
     height: 40px;
@@ -816,27 +822,28 @@ input[type='number']::-webkit-inner-spin-button {
     align-self: center;
   }
 
-  .response__header div {
+  .response_header div {
     align-self: center;
     text-align: center;
   }
 
-  .header__code {
+  .header_code {
     margin-left: 40px;
   }
-  .header__name {
+
+  .header_name {
     margin-left: 120px;
   }
-  .header__score {
+
+  .header_score {
     margin-left: 80px;
   }
-  .header__places {
-  }
-  .header__tests {
+
+  .header_tests {
     margin-left: 10px;
   }
 
-  .response__object {
+  .response_object {
     display: flex;
     font-size: 18px;
     flex-direction: row;
@@ -845,7 +852,7 @@ input[type='number']::-webkit-inner-spin-button {
     position: relative;
   }
 
-  .resp__name {
+  .resp_name {
     margin: 0;
     width: 350px;
     font-weight: normal;
@@ -853,42 +860,42 @@ input[type='number']::-webkit-inner-spin-button {
     justify-content: center;
   }
 
-  .resp__code {
+  .resp_code {
     margin: auto 20px;
     font-size: 18px;
   }
 
-  .resp__score {
+  .resp_score {
     margin: auto 45px auto 80px;
   }
 
-  .resp__places {
+  .resp_places {
     margin: auto 45px auto 80px;
   }
 
-  .resp__code::before {
+  .resp_code::before {
     content: '';
   }
 
-  .resp__score::before {
+  .resp_score::before {
     content: '';
   }
 
-  .resp__score::after {
+  .resp_score::after {
     content: '';
     top: 0;
   }
 
-  .resp__places::before {
+  .resp_places::before {
     content: '';
   }
 
-  .resp__places::after {
+  .resp_places::after {
     content: '';
     top: 0;
   }
 
-  .resp__tests {
+  .resp_tests {
     width: 220px;
 
     justify-content: center;
@@ -897,9 +904,9 @@ input[type='number']::-webkit-inner-spin-button {
     gap: 5px;
   }
 
-  /* enrollee information */
+  /* Enrollee information */
 
-  .information__links {
+  .information_links {
     gap: 50px;
   }
 
@@ -908,20 +915,20 @@ input[type='number']::-webkit-inner-spin-button {
   }
 
   .link a {
-    margin-left: 70px;
-    margin-top: 14px;
-    margin-bottom: 14px;
+    margin-left: 60px;
+    margin-top: 9px;
+    margin-bottom: 9px;
     font-size: 18px;
   }
 
   .link a::before {
     top: 0;
     left: 0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
-  .information__docs {
+  .information_docs {
     margin-top: 50px;
     gap: 50px;
   }
@@ -931,15 +938,18 @@ input[type='number']::-webkit-inner-spin-button {
   }
 
   .doc a {
-    margin-left: 70px;
+    margin-left: 60px;
     font-size: 18px;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .doc a::before {
     top: 0px;
     left: 0;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -948,43 +958,47 @@ input[type='number']::-webkit-inner-spin-button {
     max-width: 1170px;
   }
 
-  .about__programs__img img {
+  /* About programs */
+
+  .about_programs_img img {
     box-shadow: 5px 5px #fcba28;
     width: 724px;
     height: 482px;
   }
 
-  .about__programs__img {
+  .about_programs_img {
     width: 724px;
     height: 482px;
     margin: 0;
   }
 
+  /* Programs slider */
+
   .swiper {
     width: 1170px;
   }
 
-  .programs__slider__description__magistr {
+  .programs_slider_description_magistr {
     font-size: 16px;
   }
 
-  .programs__slider__title__bottom {
+  .programs_slider_title_bottom {
     font-size: 14px;
   }
 
-  .programs__small__title {
+  .programs_small_title {
     font-size: 24px;
   }
 
-  .programs__small__title__chemistry {
+  .programs_small_title_chemistry {
     font-size: 18px;
   }
 
-  .programs__slider__description {
+  .programs_slider_description {
     font-size: 16px;
   }
 
-  .programs__slider__footer {
+  .programs_slider_footer {
     gap: 50px;
   }
 
@@ -992,59 +1006,65 @@ input[type='number']::-webkit-inner-spin-button {
     font-size: 14px;
   }
 
-  .programs__slider__footer__magistr {
+  .programs_slider_footer_magistr {
     gap: 50px;
   }
 
   /* Calculator */
 
-  .calculator__subjects {
+  .calculator_subjects {
     justify-content: space-evenly;
     margin-bottom: 50px;
   }
 
-  .calculator__subject {
+  .calculator_subject {
     width: 185px;
   }
 
   /* Calculator response */
-  .header__code {
+
+  .header_code {
     margin-left: 60px;
   }
-  .header__name {
+
+  .header_name {
     margin-left: 140px;
   }
-  .header__score {
+
+  .header_score {
     margin-left: 80px;
   }
-  .header__places {
-    margin-left: 30px;
-  }
-  .header__tests {
+
+  .header_places {
     margin-left: 30px;
   }
 
-  .response__object {
+  .header_tests {
+    margin-left: 30px;
+  }
+
+  .response_object {
     width: 1140px;
   }
 
-  .resp__code {
+  .resp_code {
     margin: auto 40px;
   }
 
-  .resp__score {
+  .resp_score {
     margin: auto 75px auto 100px;
   }
 
-  .resp__places {
+  .resp_places {
     margin: auto 75px auto 100px;
   }
 
-  /* enrollee information */
+  /* Enrollee information */
 
   .link {
     width: 560px;
   }
+
   .doc {
     width: 560px;
   }

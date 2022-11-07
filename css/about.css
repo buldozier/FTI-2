@@ -5,13 +5,13 @@
   position: relative;
 }
 
-/* About institute */
+/* About FTI */
 
-.about__inner {
+.about_inner {
   margin-bottom: 40px;
 }
 
-.about__picture {
+.about_picture {
   display: inline-block;
   position: absolute;
   filter: brightness(0.3);
@@ -22,13 +22,13 @@
   z-index: -1;
 }
 
-.about__picture img {
+.about_picture img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 
-.about__buttons {
+.about_buttons {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +38,7 @@
   margin-bottom: 60px;
 }
 
-.about__button {
+.about_button {
   display: flex;
   width: 178px;
   height: 50px;
@@ -47,67 +47,67 @@
   justify-content: center;
   align-items: center;
   color: #fcba28;
-  transition: 0.2s all ease-in-out;
+  transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
 }
 
-.about__button:active {
+.about_button:active {
   color: #0f0d0e;
   background-color: #fcba28;
 }
 
-.about__end__pictures {
+.about_end_pictures {
   display: none;
   gap: 60px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.about__end__picture {
+.about_end_picture {
   border-radius: 10px;
   box-shadow: 5px 5px #fcba28;
 }
 
-.about__end__picture img {
+.about_end_picture img {
   width: 270px;
   border-radius: 10px;
 }
 
 /* People FTI */
 
-.people__fti__inner {
+.people_fti_inner {
   margin-bottom: 60px;
 }
 
-.people__fti__photos {
+.people_fti_photos {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 35px;
 }
 
-.people__fti__photo {
+.people_fti_photo {
   width: 250px;
   text-align: center;
 }
 
-.people__fti__photo p {
+.people_fti_photo p {
   height: 44px;
 }
 
-.people__fti__photo img {
+.people_fti_photo img {
   margin-bottom: 25px;
   border-radius: 20px;
   box-shadow: 3px 3px #fcba28;
   width: 250px;
 }
 
-.people__fti__photo h3 {
+.people_fti_photo h3 {
   margin-bottom: 10px;
 }
 
 /* Departments */
 
-.departments__inner {
+.departments_inner {
   margin-left: 15px;
   margin-right: 15px;
   background-color: #231f20;
@@ -117,12 +117,12 @@
   overflow: hidden;
 }
 
-.departments__inner .container {
+.departments_inner .container {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.departments__header {
+.departments_header {
   margin-bottom: 30px;
 }
 
@@ -132,13 +132,13 @@
   overflow: inherit !important;
 }
 
-.department__card {
+.department_card {
   /* width: 280px; */
   background-color: #f9f4da;
   border-radius: 10px;
 }
 
-.department__title {
+.department_title {
   display: flex;
   vertical-align: middle;
   justify-content: center;
@@ -148,22 +148,22 @@
   text-align: center;
 }
 
-.department__title__small {
+.department_title_small {
   line-height: 54px;
 }
 
-.department__title__big {
+.department_title_big {
   font-size: 18px;
   margin: auto;
 }
 
-.department__description {
+.department_description {
   font-size: 14px;
   padding: 15px;
   height: 250px;
 }
 
-.department__footer {
+.department_footer {
   background-color: #fcba28;
   padding: 15px 15px 30px 50px;
   border-radius: 0 0 10px 10px;
@@ -172,11 +172,11 @@
   position: relative;
 }
 
-.department__head {
+.department_head {
   margin-bottom: 15px;
 }
 
-.department__head::before {
+.department_head::before {
   content: '';
   position: absolute;
   top: 12px;
@@ -186,7 +186,7 @@
   background: url(./../img/icons/person.svg);
 }
 
-.department__year::before {
+.department_year::before {
   content: '';
   position: absolute;
   top: 44px;
@@ -207,7 +207,7 @@
 
 /* Partners */
 
-.partners__flexbox {
+.partners_flexbox {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -226,7 +226,7 @@
 
 .partner img {
   filter: saturate(0);
-  transition: all 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
   transform: scale(0.5);
 }
 
@@ -234,34 +234,39 @@
   filter: saturate(1);
 }
 
-@media (min-width: 576px) {
-}
-
 @media (min-width: 768px) {
   .container {
     max-width: 680px;
   }
 
-  .about__buttons {
+  /* About FTI */
+
+  .about_buttons {
     flex-direction: row;
     justify-content: center;
   }
 
-  .about__picture {
+  .about_picture {
     top: 10px;
   }
 
-  .people__fti__photos {
+  /* Peoplt FTI */
+
+  .people_fti_photos {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
+  /* Departments */
+
   .swiper {
     width: 580px;
   }
 
-  .partners__flexbox {
+  /* Partners */
+
+  .partners_flexbox {
     width: 100%;
   }
 
@@ -280,16 +285,18 @@
     max-width: 970px;
   }
 
-  .about__inner {
+  /* About FTI */
+
+  .about_inner {
     margin-bottom: 100px;
   }
 
-  .about__top__content {
+  .about_top_content {
     display: flex;
     gap: 20px;
   }
 
-  .about__picture {
+  .about_picture {
     display: inline-block;
     position: inherit;
     filter: brightness(1);
@@ -302,60 +309,65 @@
     z-index: 1;
   }
 
-  .about__picture img {
+  .about_picture img {
     width: 350px;
     height: 350px;
     border-radius: 50%;
   }
 
-  .about__title__and__text {
+  .about_text {
     width: 600px;
   }
 
-  .about__buttons {
+  .about_buttons {
     justify-content: flex-start;
     cursor: pointer;
+
   }
 
-  .about__button:hover {
+  .about_button:hover {
     color: #0f0d0e;
     background-color: #fcba28;
   }
 
-  .about__end__pictures {
+  .about_end_pictures {
     display: flex;
   }
 
-  .people__fti__inner {
+  /* Peoplt FTI */
+
+  .people_fti_inner {
     margin-bottom: 100px;
   }
 
-  .people__fti__photo {
+  .people_fti_photo {
     width: 300px;
     text-align: center;
   }
 
-  .people__fti__photo img {
+  .people_fti_photo img {
     margin-bottom: 30px;
     border-radius: 20px;
     box-shadow: 5px 5px #fcba28;
     width: 300px;
   }
 
-  .departments__inner {
+  /* Departments */
+
+  .departments_inner {
     margin-bottom: 100px;
   }
 
-  .departments__inner .container {
+  .departments_inner .container {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
-  .departments__header {
+  .departments_header {
     margin-bottom: 80px;
   }
 
-  .departments__top {
+  .departments_top {
     display: flex;
     justify-content: space-between;
   }
@@ -411,6 +423,8 @@
     width: 970px;
   }
 
+  /* Partners */
+
   .partner {
     width: 270px;
     height: 150px;
@@ -422,45 +436,58 @@
 }
 
 @media (min-width: 1200px) {
-  .about__top__content {
-    justify-content: space-between;
-  }
-
-  .about__title {
-    width: 800px;
-  }
-
   .container {
     max-width: 1170px;
   }
-  .people__fti__photos {
+
+  /* About FTI */
+
+  .about_top_content {
+    justify-content: space-between;
+  }
+
+  .about_title {
+    /* width: 800px; */
+  }
+
+  .about_buttons {
+    margin-top: 0px;
+  }
+
+  /* People FTI */
+
+  .people_fti_photos {
     justify-content: space-evenly;
   }
+
+  /* Departments */
 
   .swiper {
     width: 1170px;
   }
 
-  .department__title__big {
+  .department_title_big {
     font-size: 24px;
   }
 
-  .department__description,
-  .department__footer {
+  .department_description,
+  .department_footer {
     font-size: 16px;
   }
 
-  .department__head::before {
+  .department_head::before {
     top: 13px;
     left: 15px;
   }
 
-  .department__year::before {
+  .department_year::before {
     top: 48px;
     left: 15px;
   }
 
-  .partners__flexbox {
+  /* Partners */
+
+  .partners_flexbox {
     gap: 30px;
   }
 }

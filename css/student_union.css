@@ -1,0 +1,149 @@
+.container {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+/* About student union */
+
+.about_inner {
+  margin-bottom: 40px;
+}
+
+.about_picture {
+  display: inline-block;
+  position: absolute;
+  filter: brightness(0.3);
+  top: 13%;
+  right: 25%;
+  z-index: -1;
+}
+
+.about_picture img {
+  width: 170px;
+  height: 241px;
+}
+
+.about_buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 60px;
+}
+
+.about_button {
+  display: flex;
+  width: 140px;
+  height: 50px;
+  border: 1px solid #fcba28;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #fcba28;
+  transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+}
+
+.about_button:active {
+  color: #0f0d0e;
+  background-color: #fcba28;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 680px;
+  }
+
+  /* About FTI */
+
+  .about_buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about_picture {
+    top: -10px;
+    right: 15%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 970px;
+  }
+
+  /* About FTI */
+
+  .about_inner {
+    margin-bottom: 100px;
+  }
+
+  .about_inner .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about_top_content {
+    display: flex;
+    gap: 20px;
+  }
+
+  .about_picture {
+    display: inline-block;
+    position: inherit;
+    filter: brightness(1);
+    width: 300px;
+    height: 425px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .about_picture img {
+    width: 300px;
+    height: 425px;
+  }
+
+  .about_title_and_text {
+    width: 700px;
+  }
+
+  .about_buttons {
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+
+  .about_button:hover {
+    color: #0f0d0e;
+    background-color: #fcba28;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+
+  /* About FTI */
+
+  .about_top_content {
+    justify-content: space-between;
+  }
+
+  .about_button {
+    width: 160px;
+  }
+
+  .about_picture {
+    width: 340px;
+    height: 481px;
+  }
+
+	.about_picture img {
+    width: 340px;
+    height: 481px;
+  }
+}
