@@ -1,5 +1,5 @@
 // Validation
-const inputs = document.querySelectorAll('.calculator__subject input');
+const inputs = document.querySelectorAll('.calculator_subject input');
 
 inputs.forEach(el => {
   el.addEventListener('change', function () {
@@ -19,51 +19,51 @@ inputs.forEach(el => {
 
 const setValidValue = function (element, minValue) {
   if (element.value < minValue && element.value !== '') {
-    element.classList.add('calculator__subjects__invalid');
+    element.classList.add('calculator_subjects_invalid');
   } else {
-    element.classList.remove('calculator__subjects__invalid');
+    element.classList.remove('calculator_subjects_invalid');
   }
 
   if (element.value > 100) {
     element.value = 100;
-    element.classList.remove('calculator__subjects__invalid');
+    element.classList.remove('calculator_subjects_invalid');
   }
 };
 
 // Results
 
-const form = document.querySelector('.calculator__form');
+const form = document.querySelector('.calculator_form');
 
 class ResponseObject {
   constructor(Array) {
-    const respForm = document.querySelector('.response__form');
+    const respForm = document.querySelector('.response_form');
 
-    createElement('response__object', respForm);
+    createElement('response_object', respForm);
 
-    const respObjAll = document.querySelectorAll('.response__object');
+    const respObjAll = document.querySelectorAll('.response_object');
     const respObjAllLastElement = respObjAll.length - 1;
     const respObj = respObjAll[respObjAllLastElement];
 
-    createElement('resp__code', respObj, Array[0]);
-    createElement('resp__name', respObj, Array[2]);
-    createElement('resp__score', respObj, Array[3]);
-    createElement('resp__places', respObj, Array[4]);
-    createElement('resp__tests', respObj);
+    createElement('resp_code', respObj, Array[0]);
+    createElement('resp_name', respObj, Array[2]);
+    createElement('resp_score', respObj, Array[3]);
+    createElement('resp_places', respObj, Array[4]);
+    createElement('resp_tests', respObj);
 
-    const respTestsAll = document.querySelectorAll('.resp__tests');
+    const respTestsAll = document.querySelectorAll('.resp_tests');
     const respTestsAllLastElement = respTestsAll.length - 1;
     const respTests = respTestsAll[respTestsAllLastElement];
 
-    createElement('resp__test', respTests, 'М', 'math');
-    createElement('resp__test', respTests, 'РЯ', 'russian');
-    createElement('resp__test', respTests, 'Ф', 'physics');
+    createElement('resp_test', respTests, 'М', 'math');
+    createElement('resp_test', respTests, 'РЯ', 'russian');
+    createElement('resp_test', respTests, 'Ф', 'physics');
 
     if (Array[6] === '1') {
-      createElement('resp__test', respTests, 'ИКТ', 'informatics');
+      createElement('resp_test', respTests, 'ИКТ', 'informatics');
     }
 
     if (Array[7] === '1') {
-      createElement('resp__test', respTests, 'Х', 'chemistry');
+      createElement('resp_test', respTests, 'Х', 'chemistry');
     }
   }
 }
@@ -106,7 +106,7 @@ async function handleFormSubmit(event) {
         const responseObject = Object.assign(objPhys, objInf, objChem);
 
         removeAdvise();
-        // const respObjAll = document.querySelectorAll('.response__object');
+        // const respObjAll = document.querySelectorAll('.response_object');
         // respObjAll.forEach(el => {
         //   el.remove();
         // });
@@ -115,8 +115,8 @@ async function handleFormSubmit(event) {
 
         if (Object.keys(responseObject).length !== 0) {
           createResponseMarkup();
-          const isRespInner = document.querySelector('.response__form');
-          const isResponseHeader = document.querySelector('.response__header');
+          const isRespInner = document.querySelector('.response_form');
+          const isResponseHeader = document.querySelector('.response_header');
 
           if (!!isRespInner && !isResponseHeader) {
             createResponseHeader(isRespInner);
@@ -142,8 +142,8 @@ async function handleFormSubmit(event) {
 }
 
 function removeAdvise() {
-  const respInner = document.querySelector('.response__inner');
-  const isRespRejected = document.querySelector('.response__rejected');
+  const respInner = document.querySelector('.response_inner');
+  const isRespRejected = document.querySelector('.response_rejected');
 
   if (!!isRespRejected) {
     isRespRejected.remove();
@@ -155,25 +155,25 @@ function removeAdvise() {
 }
 
 function createAdvise(adviseText) {
-  const calcSubject = document.querySelector('.calculator__subjects');
+  const calcSubject = document.querySelector('.calculator_subjects');
 
-  createElement('response__rejected', calcSubject, adviseText);
+  createElement('response_rejected', calcSubject, adviseText);
 }
 
 function createResponseMarkup() {
-  createElement('response__inner', form);
-  const respInner = document.querySelector('.response__inner');
-  createElement('response__form', respInner);
+  createElement('response_inner', form);
+  const respInner = document.querySelector('.response_inner');
+  createElement('response_form', respInner);
 }
 
 function createResponseHeader(isRespInner) {
-  createElement('response__header', isRespInner);
-  const responseHeader = document.querySelector('.response__header');
-  createElement('header__code', responseHeader, 'Код');
-  createElement('header__name', responseHeader, 'Название направления');
-  createElement('header__score', responseHeader, 'Проходной балл 2021');
-  createElement('header__places', responseHeader, 'Бюджетных мест');
-  createElement('header__tests', responseHeader, 'Вступительные испытания');
+  createElement('response_header', isRespInner);
+  const responseHeader = document.querySelector('.response_header');
+  createElement('header_code', responseHeader, 'Код');
+  createElement('header_name', responseHeader, 'Название направления');
+  createElement('header_score', responseHeader, 'Проходной балл 2021');
+  createElement('header_places', responseHeader, 'Бюджетных мест');
+  createElement('header_tests', responseHeader, 'Вступительные испытания');
 }
 
 function createElement(className, addToElement, content, secondClassName) {

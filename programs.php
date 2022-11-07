@@ -30,6 +30,5 @@ require('components/footer.php');
 	<script src="js/main.js"></script>
 	<script src="js/swiper.js" type="module"></script>
 	<script src="js/programs.js" type="module"></script>
-	<script src="js/swiper.js" type="module"></script>
 	<script src="js/calculator.js" type="module"></script>
 </html>

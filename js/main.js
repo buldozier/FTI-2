@@ -1,14 +1,14 @@
 // Сайдбар на мобилке
-const sidebar = document.querySelector('.sidebar__mobile');
-const menuIcon = document.querySelector('.menu__icon');
-const sidebarToggleBtn = document.querySelector('.menu__icon__wrapper');
+const sidebar = document.querySelector('.sidebar_mobile');
+const menuIcon = document.querySelector('.menu_icon');
+const sidebarToggleBtn = document.querySelector('.menu_icon_wrapper');
 
 // Обработчик нажатия вне сайдбара
 document.addEventListener('click', e => {
   const inBondaries = e.composedPath().includes(sidebar);
   const inSidebarBtn = e.composedPath().includes(sidebarToggleBtn);
 
-  if (sidebar.classList.contains('sidebar__mobile__active') && !inSidebarBtn && !inBondaries) {
+  if (sidebar.classList.contains('sidebar_mobile_active') && !inSidebarBtn && !inBondaries) {
     toggleSidebar();
     document.body.style = '';
   }
@@ -17,7 +17,7 @@ document.addEventListener('click', e => {
 // Обработчик нажатия на кнопку сайдбара
 sidebarToggleBtn.addEventListener('click', () => {
   toggleSidebar();
-  if (sidebar.classList.contains('sidebar__mobile__active')) {
+  if (sidebar.classList.contains('sidebar_mobile_active')) {
     document.body.style.overflow = 'hidden';
   } else {
     document.body.style = '';
@@ -26,18 +26,18 @@ sidebarToggleBtn.addEventListener('click', () => {
 
 // Функция открытия и закрытия сайдбара
 const toggleSidebar = () => {
-  menuIcon.classList.toggle('menu__icon__active');
-  sidebar.classList.toggle('sidebar__mobile__active');
+  menuIcon.classList.toggle('menu_icon_active');
+  sidebar.classList.toggle('sidebar_mobile_active');
 };
 
 // Btn to top
-const btnToTop = document.querySelector('.btn__to__top');
+const btnToTop = document.querySelector('.btn_to_top');
 
 document.addEventListener('scroll', () => {
   if (window.scrollY >= 150) {
-    btnToTop.classList.remove('btn__to__top__hidden');
+    btnToTop.classList.remove('btn_to_top_hidden');
   } else {
-    btnToTop.classList.add('btn__to__top__hidden');
+    btnToTop.classList.add('btn_to_top_hidden');
   }
 });
 
