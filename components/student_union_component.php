@@ -32,4 +32,56 @@
       </div>
     </div>
   </div>
+	<div class="events_inner">
+		<div class="container">
+			<h2 class="events_header">Мероприятия</h2>
+			<div class="events">
+				<!-- 1 event -->
+				<div class="event" data-project="Физтех Weekend">
+					<img src="img/student_union/Физтех Weekend.png" alt="Физтех Weekend">
+					<p>Физтех Weekend</p>
+				</div>
+				<!-- 2 event -->
+				<div class="event" data-project="Дебют первокурсников">
+					<img src="img/student_union/Дебют первокурсников.png" alt="Дебют первокурсников">
+					<p>Дебют первокурсников</p>
+				</div>
+				<!-- 3 event -->
+				<div class="event" data-project="Слет ФТИ">
+					<img src="img/student_union/Слет ФТИ.png" alt="Слет ФТИ">
+					<p>Слет ФТИ</p>
+				</div>
+				<!-- 4 event -->
+				<div class="event" data-project="ЧтоГдеКогда">
+					<img src="img/student_union/ЧтоГдеКогда.png" alt="Что? Где? Когда?">
+					<p>Что? Где? Когда?</p>
+				</div>
+				<!-- 5 event -->
+				<div class="event" data-project="Школа студенческого актива">
+					<img src="img/student_union/Школа студенческого актива.png" alt="Школа студенческого актива">
+					<p>Школа студенческого актива</p>
+				</div>
+				<!-- 6 event -->
+				<div class="event" data-project="Батуты">
+					<img src="img/student_union/Батуты.png" alt="Батуты">
+					<p>Батуты</p>
+				</div>
+				<!-- 7 event -->
+				<div class="event" data-project="Международная конференция ФТИ">
+					<img src="img/student_union/Международная конференция ФТИ.png" alt="Международная конференция ФТИ">
+					<p>Международная конференция ФТИ</p>
+				</div>
+				<!-- 8 event -->
+				<div class="event" data-project="Выпускной">
+					<img src="img/student_union/Выпускной.png" alt="Выпускной">
+					<p>Выпускной</p>
+				</div>
+				<!-- 9 event -->
+				<div class="event" data-project="Газета Фотон">
+					<img src="img/student_union/Газета Фотон.png" alt="Газета Фотон">
+					<p>Газета "Фотон"</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
