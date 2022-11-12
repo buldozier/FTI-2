@@ -37,12 +37,12 @@
       <h2 class="events_header">Мероприятия</h2>
       <div class="events">
         <!-- 1 event -->
-        <div class="event" data-project="Физтех Weekend">
+        <div class="event" data-project="0">
           <img src="img/student_union/Физтех Weekend.png" alt="Физтех Weekend" />
           <p>Физтех Weekend</p>
         </div>
         <!-- 2 event -->
-        <div class="event" data-project="Дебют первокурсников">
+        <div class="event" data-project="1">
           <img src="img/student_union/Дебют первокурсников.png" alt="Дебют первокурсников" />
           <p>Дебют первокурсников</p>
         </div>
@@ -82,24 +82,7 @@
           <p>Газета "Фотон"</p>
         </div>
       </div>
-      <div class="inner_overlay overlay_hidden">
-        <div class="overlay_event">
-          <div class="overlay_content">
-            <h3>Физтех Weekend</h3>
-            <div class="overlay_photos">
-              <div class="overlay_photo top_photo"></div>
-              <div class="overlay_photo"></div>
-              <div class="overlay_photo"></div>
-              <div class="overlay_photo"></div>
-              <div class="overlay_photo"></div>
-            </div>
-            <div class="overlay_text"></div>
-            <div class="close_overlay_btn">
-              <div class="close_btn"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="inner_overlay overlay_hidden"></div>
     </div>
   </div>
 </div>

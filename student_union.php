@@ -23,5 +23,8 @@ require('components/footer.php');
 
 	</body>
   <script src="js/main.js"></script>
+	<script src="js/events_object.js" type="module"></script>
 	<script src="js/student_union.js" type="module"></script>
+	<script src="js/events.js" type="module"></script>
+
 </html>
