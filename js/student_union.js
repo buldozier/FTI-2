@@ -1,13 +1,13 @@
-import {EventsObject} from './events_object.js';
+import {Events} from './events_object.js';
 
 const events = document.querySelector('.events');
 const eventPush = document.querySelectorAll('.event');
 const innerOverlay = document.querySelector('.inner_overlay');
 const btnToTop = document.querySelector('.btn_to_top');
 
-const eventsObj = new EventsObject();
+const eventsObj = new Events();
 class CreateEvent {
-  constructor(id) {
+  constructor(currentEvent) {
     const innerOverlay = document.querySelector('.inner_overlay');
 
     createElement('overlay_event', innerOverlay);
@@ -18,20 +18,23 @@ class CreateEvent {
 
     const overlayHeader = document.querySelector('.overlay_header');
 
-    createElement('overlay_header_header', overlayHeader, eventsObj.event[id].header);
+    createElement('overlay_header_header', overlayHeader, currentEvent.header);
 
     createElement('overlay_content', overlayEvent);
 
     const overlayContent = document.querySelector('.overlay_content');
 
-    createElement('overlay_text', overlayContent, eventsObj.event[id].text);
+    createElement('overlay_text', overlayContent, currentEvent.text);
 
-    createVideo('https://vk.com/video_ext.php?oid=-8864093&id=456239089&hash=660512d2b7f0f555&hd4');
+    if (!!currentEvent.video) {
+      createVideo(currentEvent.video);
+    }
 
     createElement('overlay_photos', overlayContent);
 
-    createPhoto(eventsObj.event[id].img[0].url);
-    createPhoto(eventsObj.event[id].img[1].url);
+    currentEvent.img.forEach(el => {
+      createPhoto(el.url);
+    });
 
     createElement('close_btn', overlayContent);
   }
@@ -40,9 +43,13 @@ class CreateEvent {
 eventPush.forEach(el => {
   el.addEventListener('click', () => {
     const isEvent = document.querySelector('.overlay_event');
-    
+
     if (!isEvent) {
-      new CreateEvent(el.dataset.project);
+      eventsObj.events.forEach(element => {
+        if (element.header == el.dataset.project) {
+          new CreateEvent(element);
+        }
+      });
     } else {
       isEvent.remove();
     }
@@ -62,10 +69,6 @@ document.addEventListener('click', e => {
   const inEvents = e.composedPath().includes(events);
   const inBondaries = e.composedPath().includes(overlayContent);
   const inCloseBtn = e.composedPath().includes(closeBtn);
-
-  console.log(!inEvents);
-  console.log(!inBondaries);
-  console.log(!inCloseBtn);
 
   if (!inEvents && !innerOverlay.classList.contains('overlay_hidden') && !inCloseBtn && !inBondaries) {
     toggleOverlay();

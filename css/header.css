@@ -25,12 +25,13 @@
 }
 
 html::-webkit-scrollbar {
-  width: 10px;
+  
   background-color: #0f0d0e;
 }
 
 html::-webkit-scrollbar-thumb {
   background-color: #fcba28;
+  border-radius: 10px;
 }
 
 html {

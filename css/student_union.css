@@ -29,7 +29,7 @@
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 35px;
   margin-bottom: 60px;
@@ -121,6 +121,7 @@
 .overlay_header {
   display: flex;
   height: 44px;
+  margin-bottom: 20px;
 }
 
 .overlay_header_header {
@@ -131,14 +132,23 @@
 }
 
 .overlay_content {
-  max-height: calc(100vh - 100px);
+  max-height: calc(100vh - 125px);
   overflow-y: auto;
   width: 100%;
-  padding-right: 12.5px;
+  padding-right: 7px;
+}
+
+.overlay_content::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f4da;
+}
+
+.overlay_content::-webkit-scrollbar-thumb {
+  background-color: #fcba28;
+  border-radius: 10px;
 }
 
 .overlay_text {
-  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -155,7 +165,6 @@
   flex-wrap: wrap;
   gap: 20px;
   /* overflow-x: auto; */
-  padding-bottom: 15px;
 }
 
 .overlay_photo {
@@ -255,8 +264,8 @@
   }
 
   .overlay_video {
-    width: 708px;
-    height: 398.25px;
+    width: 698px;
+    height: 392.6px;
   }
 }
 
@@ -346,16 +355,21 @@
 
   .overlay_header_header {
     font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: auto 0;
+
     font-weight: bold;
   }
 
   .overlay_content {
-    max-height: calc(100vh - 130px);
+    max-height: calc(100vh - 150px);
     overflow-y: auto;
     width: 100%;
-    padding-right: 22.5px;
+    padding-right: 15px;
+  }
+
+  .overlay_content::-webkit-scrollbar {
+    width: 15px;
+    background-color: #f9f4da;
   }
 
   .overlay_text {
@@ -363,17 +377,17 @@
   }
 
   .overlay_video {
-    width: 708px;
-    height: 398.25px;
+    width: 889px;
+    height: 500px;
   }
 
   .close_btn {
     z-index: 10;
     position: absolute;
     top: 30px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,26 +396,26 @@
     background-color: transparent;
     cursor: pointer;
   }
-  
+
   .close_btn::before {
     position: absolute;
     left: 0;
-    top: 12px;
+    top: 15px;
     content: '';
-    width: 30px;
-    height: 5px;
+    width: 40px;
+    height: 6px;
     background-color: #0f0d0e;
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
     transform: rotate(45deg);
   }
-  
+
   .close_btn::after {
     position: absolute;
     left: 0;
-    top: 12px;
+    top: 15px;
     content: '';
-    width: 30px;
-    height: 5px;
+    width: 40px;
+    height: 6px;
     background-color: #0f0d0e;
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
     transform: rotate(-45deg);

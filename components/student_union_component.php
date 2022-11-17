@@ -37,12 +37,12 @@
       <h2 class="events_header">Мероприятия</h2>
       <div class="events">
         <!-- 1 event -->
-        <div class="event" data-project="0">
+        <div class="event" data-project="Физтех Weekend">
           <img src="img/student_union/Физтех Weekend.png" alt="Физтех Weekend" />
           <p>Физтех Weekend</p>
         </div>
         <!-- 2 event -->
-        <div class="event" data-project="1">
+        <div class="event" data-project="Дебют первокурсников">
           <img src="img/student_union/Дебют первокурсников.png" alt="Дебют первокурсников" />
           <p>Дебют первокурсников</p>
         </div>
@@ -52,7 +52,7 @@
           <p>Слет ФТИ</p>
         </div>
         <!-- 4 event -->
-        <div class="event" data-project="ЧтоГдеКогда">
+        <div class="event" data-project="Что? Где? Когда?">
           <img src="img/student_union/ЧтоГдеКогда.png" alt="Что? Где? Когда?" />
           <p>Что? Где? Когда?</p>
         </div>
