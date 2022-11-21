@@ -657,6 +657,10 @@ input[type='number']::-webkit-inner-spin-button {
 
   /* Programs slider */
 
+  .programs_slider_inner {
+    margin-bottom: 100px;
+  }
+
   .programs_slider_inner .container {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -771,6 +775,10 @@ input[type='number']::-webkit-inner-spin-button {
   }
 
   /* Calculator */
+
+  .calculator_inner {
+    margin-bottom: 100px;
+  }
 
   .calculator_subjects {
     flex-direction: row;

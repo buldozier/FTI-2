@@ -1,4 +1,4 @@
-import {Events} from './events_object.js';
+import Events from './events_object.js';
 
 const events = document.querySelector('.events');
 const eventPush = document.querySelectorAll('.event');
