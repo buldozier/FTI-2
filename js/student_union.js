@@ -1,16 +1,24 @@
 import Events from './events_object.js';
 
+// Variables
+
 const events = document.querySelector('.events');
 const eventPush = document.querySelectorAll('.event');
-const innerOverlay = document.querySelector('.inner_overlay');
+const innerOverlayEvents = document.querySelector('.inner_overlay');
+
+const thumbCommissions = document.querySelectorAll('.thumb');
+const commissions = document.querySelectorAll('.commission');
+
 const btnToTop = document.querySelector('.btn_to_top');
 
 const eventsObj = new Events();
+
+// Classes
 class CreateEvent {
   constructor(currentEvent) {
-    const innerOverlay = document.querySelector('.inner_overlay');
+    const innerOverlayEvents = document.querySelector('.inner_overlay');
 
-    createElement('overlay_event', innerOverlay);
+    createElement('overlay_event', innerOverlayEvents);
 
     const overlayEvent = document.querySelector('.overlay_event');
 
@@ -40,6 +48,8 @@ class CreateEvent {
   }
 }
 
+// Events
+
 eventPush.forEach(el => {
   el.addEventListener('click', () => {
     const isEvent = document.querySelector('.overlay_event');
@@ -54,30 +64,61 @@ eventPush.forEach(el => {
       isEvent.remove();
     }
 
-    if (innerOverlay.classList.contains('overlay_hidden')) {
-      toggleOverlay(true);
+    if (innerOverlayEvents.classList.contains('overlay_hidden')) {
+      toggleOverlayEvents(true);
     } else {
-      toggleOverlay();
+      toggleOverlayEvents();
     }
   });
 });
 
 document.addEventListener('click', e => {
-  const closeBtn = document.querySelector('.close_btn');
   const overlayContent = document.querySelector('.overlay_event');
+  const closeBtn = document.querySelector('.close_btn');
 
   const inEvents = e.composedPath().includes(events);
   const inBondaries = e.composedPath().includes(overlayContent);
   const inCloseBtn = e.composedPath().includes(closeBtn);
 
-  if (!inEvents && !innerOverlay.classList.contains('overlay_hidden') && !inCloseBtn && !inBondaries) {
-    toggleOverlay();
+  if (!inEvents && !innerOverlayEvents.classList.contains('overlay_hidden') && !inCloseBtn && !inBondaries) {
+    toggleOverlayEvents();
   }
 
-  if (inCloseBtn) {
-    toggleOverlay();
+  if (inBondaries && inCloseBtn) {
+    toggleOverlayEvents();
   }
 });
+
+// Commissions
+
+thumbCommissions.forEach(el => {
+  el.addEventListener('click', () => {
+    if (!el.parentNode.classList.contains('thumb_open')) {
+      commissions.forEach(element => {
+        const elContent = element.querySelector('.content');
+
+        elContent.classList.remove('content_open');
+
+        element.classList.remove('thumb_open');
+
+        elContent.style.maxHeight = null;
+      });
+    }
+
+    const elContent = el.parentNode.querySelector('.content');
+
+    elContent.classList.toggle('content_open');
+    el.parentNode.classList.toggle('thumb_open');
+
+    if (elContent.style.maxHeight) {
+      elContent.style.maxHeight = null;
+    } else {
+      elContent.style.maxHeight = elContent.scrollHeight + 'px';
+    }
+  });
+});
+
+// Functions
 
 function createElement(className, addToElement, content) {
   const div = document.createElement('div');
@@ -113,15 +154,16 @@ function createVideo(url) {
   overlayContent.append(iframe);
 }
 
-function toggleOverlay(isHidden) {
-  innerOverlay.classList.toggle('overlay_hidden');
+function toggleOverlayEvents(isHidden) {
+  innerOverlayEvents.classList.toggle('overlay_hidden');
   if (isHidden === true) {
     document.body.style.overflow = 'hidden';
     btnToTop.classList.toggle('btn_to_top_hidden');
   } else {
-    const isEvent = document.querySelector('.overlay_event');
     document.body.style.overflow = '';
-    isEvent.remove();
     btnToTop.classList.toggle('btn_to_top_hidden');
+
+    const isEvent = document.querySelector('.overlay_event');
+    isEvent.remove();
   }
 }

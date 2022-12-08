@@ -87,7 +87,7 @@
   </div>
   <div class="team_inner">
     <div class="container">
-      <h2 class="team_header">Мероприятия</h2>
+      <h2 class="team_header">Команда</h2>
       <div class="team_structure">
         <!-- Мариам Акопян -->
         <div class="person">
@@ -259,7 +259,176 @@
           </div>
         </div>
       </div>
-      <div class="team_commissions"></div>
+      <div class="team_commissions">
+        <!-- Спортивно-массовая комиссия -->
+        <div class="commission">
+          <div class="thumb">Спортивно-массовая комиссия</div>
+          <div class="content">
+            <div class="content_text">
+              <div class="about">
+                <div class="about_header">Немного о комиссии</div>
+                <div class="about_text">
+                  СМК занимается организацией и проведением спортивно-массовых мероприятий: спортивные игры (футбол,
+                  стрибол, волейбол, настольный теннис, боулинг и т.д.), квесты, выходы на природу, кроссы. СМК отвечает
+                  за организацию сборных по разным видам спорта, которые защищают честь физтеха. В спорте много жизни и
+                  много направлений!
+                </div>
+              </div>
+            </div>
+            <img src="img/student_union/commissions/СМК/commission.jpg" alt="Фото комиссии" />
+            <img src="img/student_union/commissions/СМК/poster.jpg" alt="Афиша мероприятия" />
+          </div>
+        </div>
+        <!-- Учебно-научная комиссия -->
+        <div class="commission">
+          <div class="thumb">Учебно-научная комиссия</div>
+          <div class="content">
+            <div class="content_text">
+              <div class="about">
+                <div class="about_header">Немного о комиссии</div>
+                <div class="about_text">
+                  УНК организует интеллектуальные игры ("Что? Где? Когда?", игра на знание кинематографа "Катакана", "Самый умный первокурсник", "Brain Battle"). Реализует проект “Лекторий ФизТеха”при поддержке канала “Химия - просто” (открытые лекции, на которых преподаватели ФТИ дают материал языком, понятным для всех, проводят опыты и ставят эксперименты) и научную молодежную конференцию “Физика.Технологии.Инновации”. Также комиссия организует экскурсии на предприятия и выставки.
+                </div>
+              </div>
+            </div>
+            <img src="img/student_union/commissions/УНК/commission.jpg" alt="Фото комиссии" />
+            <img src="img/student_union/commissions/УНК/poster.jpg" alt="Афиша мероприятия" />
+          </div>
+        </div>
+        <!-- Культурно-массовая комиссия -->
+        <div class="commission">
+          <div class="thumb">Культурно-массовая комиссия</div>
+          <div class="content">
+            <div class="content_text">
+              <div class="about">
+                <div class="about_header">Немного о комиссии</div>
+                <div class="about_text">
+                  Самое яркое событие для КМК — «Дебют Первокурсников». Каждый год они встречают первокурсников и раскрывают их таланты, помогают познакомиться с институтом. Комиссия помогает продумывать сценарии, придумывать шутки, редактирует номера групп.
+                  Еще одно масштабное мероприятие — «Бенефис». Объединившись с другим институтом по жеребьевке, пара институтов ставит номер на сцене ГУКа на 30 минут. Это требует много сил, креативности и ответственности.
+                </div>
+              </div>
+            </div>
+            <img src="img/student_union/commissions/КМК/commission.jpg" alt="Фото комиссии" />
+            <img src="img/student_union/commissions/КМК/poster.jpg" alt="Афиша мероприятия" />
+          </div>
+        </div>
+        <!-- Организационно-массовая комиссия -->
+        <div class="commission">
+          <div class="thumb">Организационно-массовая комиссия</div>
+          <div class="content">
+            <div class="content_text">
+              <div class="about">
+                <div class="about_header">Немного о комиссии</div>
+                <div class="about_text">
+                  Основная деятельность комиссии — это работа с профсоюзной организацией университета: сбор взносов, выдача и продление профсоюзных билетов. Ежегодная цель — это добиться 100% «вступаемости» студентов всех курсов в профсоюз.
+                  Также в комиссии много работы с документацией, оформлением служебных записок, организацией ОВК (отчетно-выборочная конференция), регистрация участников на мероприятиях. В общем, много-много всего супер важного!
+                </div>
+              </div>
+            </div>
+            <img src="img/student_union/commissions/ОМК/commission.jpg" alt="Фото комиссии" />
+            <img src="img/student_union/commissions/ОМК/poster.jpg" alt="Афиша мероприятия" />
+          </div>
+        </div>
+        <!-- Социально-правовая комиссия -->
+        <div class="commission">
+          <div class="thumb">Социально-правовая комиссия</div>
+          <div class="content">
+            <div class="content_text">
+              <div class="about">
+                <div class="about_header">Немного о комиссии</div>
+                <div class="about_text">
+                  Основная деятельность комиссии - это материальная поддержка. Она включает в себя сбор документов у студентов, а затем формирование их для передачи стипендиальной комиссии. Так же СПК занимается благотворительной деятельностью. Например, каждый год ездит в Полевской детский дом, для детей из которого предварительно устраивает сбор подарков от студентов ФТИ.
+                </div>
+              </div>
+            </div>
+            <img src="img/student_union/commissions/СПК/commission.jpg" alt="Фото комиссии" />
+            <img src="img/student_union/commissions/СПК/poster.jpg" alt="Афиша мероприятия" />
+          </div>
+        </div>
+        <!-- Жилищно-бытовая комиссия -->
+        <div class="commission">
+          <div class="thumb">Жилищно-бытовая комиссия</div>
+          <div class="content">
+            <div class="content_text">
+              <div class="about">
+                <div class="about_header">Немного о комиссии</div>
+                <div class="about_text">
+                  Функционал комиссии можно описать такими словами, как «селим, расселяем, переселяем, не селим, выселяем (со всеми вытекающими из этого документами)».
+                  ЖБК является неким проводником между заведующими общежития , физтехом и администрацией института, участвует в организации слётов и мероприятий, помогает студентам, в особенности первокурсникам, с поселением в общежитие.
+                </div>
+              </div>
+            </div>
+            <img src="img/student_union/commissions/ЖБК/commission.jpg" alt="Фото комиссии" />
+            <img src="img/student_union/commissions/ЖБК/poster.png" alt="Афиша мероприятия" />
+          </div>
+        </div>
+        <!-- Информационная комиссия -->
+        <div class="commission">
+          <div class="thumb">Информационная комиссия</div>
+          <div class="content">
+            <div class="content_text">
+              <div class="about">
+                <div class="about_header">Немного о комиссии</div>
+                <div class="about_text">
+                  Благодаря ИК вы узнаете обо всех мероприятиях и новостях, ведь это они работают с группой союза студентов, они выкладывают все посты и разрабатывают весь контент план.
+                  Фотографы комиссии снимают все мероприятия союза студентов и делают вам потрясающие аватарки, а дизайнеры рисуют красивые афиши, которые украшают не только группу в ВК. 72 - столько афиш, которые сделали наши дизайнеры, висит в кабинете союза студентов ФТИ.
+                </div>
+              </div>
+            </div>
+            <img src="img/student_union/commissions/ИК/commission.jpg" alt="Фото комиссии" />
+            <img src="img/student_union/commissions/ИК/poster.jpg" alt="Афиша мероприятия" />
+          </div>
+        </div>
+        <!-- Комиссия по работе с волонтерами -->
+        <div class="commission">
+          <div class="thumb">Комиссия по работе с волонтерами</div>
+          <div class="content">
+            <div class="content_text">
+              <div class="about">
+                <div class="about_header">Немного о комиссии</div>
+                <div class="about_text">
+                  Комиссия занимается организацией мероприятий и помогает проводить мероприятия разных масштабов: от институтских до международных. Для студентов это возможность участвовать в студенческой жизни, знакомиться с новыми людьми, быть всегда на самых больших событиях в универе, повышать свое умение в общении и дисциплине, жить в коллективе. Комиссия работает по плану мероприятий, регистрирует участников, следит за комфортом волонтеров, таймингом.
+                </div>
+              </div>
+            </div>
+            <img src="img/student_union/commissions/КОРСВ/commission.jpg" alt="Фото комиссии" />
+            <img src="img/student_union/commissions/КОРСВ/poster.jpg" alt="Афиша мероприятия" />
+          </div>
+        </div>
+        <!-- Комиссия по работе с наставниками -->
+        <div class="commission">
+          <div class="thumb">Комиссия по работе с наставниками</div>
+          <div class="content">
+            <div class="content_text">
+              <div class="about">
+                <div class="about_header">Немного о комиссии</div>
+                <div class="about_text">
+                  Наставник в студенческой среде – студент старших курсов, который помогает адаптироваться первокурсникам в студенческой жизни. Этот человек оказывает помощь в учебе  и других возникающих проблемах, передает свой студенческий опыт.
+                  И именно деятельность студента под руководством лидера-наставника – это залог профессионального роста и высоких результатов.
+                </div>
+              </div>
+            </div>
+            <img src="img/student_union/commissions/КОРСН/commission.jpg" alt="Фото комиссии" />
+            <img src="img/student_union/commissions/КОРСН/poster.jpg" alt="Афиша мероприятия" />
+          </div>
+        </div>
+        <!-- Проект "Role play" -->
+        <div class="commission">
+          <div class="thumb">Проект "Role play"</div>
+          <div class="content">
+            <div class="content_text">
+              <div class="about">
+                <div class="about_header">Немного о комиссии</div>
+                <div class="about_text">
+                  Объединение, создающее ролевые игры разных форматов. Проект занимается квестами, патигеймами, аналогами мафии, а также полноценными ролевыми. Помимо активностей на физтехе, проект вырос в полноценную организацию и теперь делает мероприятия на весь УрФУ.
+                </div>
+              </div>
+            </div>
+            <img src="img/student_union/commissions/RP/commission.jpg" alt="Фото комиссии" />
+            <img src="img/student_union/commissions/RP/poster.jpg" alt="Афиша мероприятия" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

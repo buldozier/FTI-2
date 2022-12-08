@@ -105,7 +105,7 @@
 .overlay_event {
   /* width: calc(100%-60px); */
   max-height: calc(100vh - 60px);
-  margin: auto 15px;
+  margin: 15px;
   padding: 15px;
   border-radius: 15px;
   background-color: #f9f4da;
@@ -140,7 +140,7 @@
 
 .overlay_content::-webkit-scrollbar {
   width: 10px;
-  background-color: #f9f4da;
+  /* background-color: #f9f4da; */
 }
 
 .overlay_content::-webkit-scrollbar-thumb {
@@ -154,7 +154,8 @@
 
 .overlay_video {
   width: 100%;
-  height: calc(0.5625 * (100vw - 60px));
+  /* height: calc(0.5625 * (100vw - 70px)); */
+  aspect-ratio: 16/9;
   border: none;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -259,6 +260,83 @@
   font-size: 12px;
 }
 
+/* Team commissions */
+
+.team_commissions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fcba28;
+  color: #0f0d0e;
+  border-radius: 10px;
+}
+
+.thumb {
+  padding: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.commission + .commission .thumb {
+  border-top: 1px solid #0f0d0e;
+}
+
+.thumb::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: url(../img/icons/chevron.svg);
+  transform: rotate(180deg);
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.thumb_open + .commission .thumb {
+  border: none;
+}
+
+.thumb_open .thumb::after {
+  transform: rotate(0deg);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 15px;
+  background-color: #f9f4da;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  box-shadow: inset 0 2px 5px #0f0d0e, inset 0 -2px 5px #0f0d0e;
+}
+
+.content_open {
+  padding: 15px;
+  opacity: 1;
+}
+
+.about_header,
+.amount_header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content img:first-of-type {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content img:last-of-type {
+  width: 50%;
+  border-radius: 10px;
+  margin: auto;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 680px;
@@ -312,7 +390,6 @@
 
   .overlay_video {
     width: 698px;
-    height: 392.6px;
   }
 
   /* Team */
@@ -337,6 +414,34 @@
 
   .person_info p {
     font-size: 14px;
+  }
+
+  /* Commissions */
+
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .content_text {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .content img {
+    margin: auto 0;
+  }
+
+  .content img:first-of-type {
+    width: 360px;
+    order: 2;
+  }
+
+  .content img:last-of-type {
+    width: 170px;
+    order: 3;
   }
 }
 
@@ -449,7 +554,6 @@
 
   .overlay_video {
     width: 889px;
-    height: 500px;
   }
 
   .close_btn {
@@ -509,6 +613,57 @@
   .person img {
     width: 200px;
     height: 200px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .person img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Commissions */
+
+  .thumb {
+    cursor: pointer;
+    padding: 15px;
+  }
+
+  .thumb::after {
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+  }
+
+  .content {
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 20px;
+    max-height: 0;
+  }
+
+  .content_open {
+    padding: 20px;
+  }
+
+  .content_text {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    order: 2;
+  }
+
+  .content img {
+    margin: auto 0;
+  }
+
+  .content img:first-of-type {
+    width: 360px;
+    order: 1;
+  }
+
+  .content img:last-of-type {
+    width: 170px;
+    order: 3;
   }
 }
 
@@ -576,5 +731,11 @@
 
   .person_info p {
     font-size: 14px;
+  }
+
+  /* Commissions */
+
+  .content_text {
+    width: 560px;
   }
 }
