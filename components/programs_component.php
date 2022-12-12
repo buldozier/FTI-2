@@ -664,7 +664,7 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/03.04.01.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/03.04.01.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -707,10 +707,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/09.04.02_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/09.04.02_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/09.04.02_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/09.04.02_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -753,10 +753,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/11.04.04_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/11.04.04_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/11.04.04_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/11.04.04_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -798,10 +798,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/11.04.04_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/11.04.04_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/11.04.04_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/11.04.04_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -843,10 +843,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/12.04.01_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/12.04.01_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/12.04.01_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/12.04.01_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -888,10 +888,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/12.04.04_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/12.04.04_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/12.04.04_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/12.04.04_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -935,10 +935,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/14.04.02_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/14.04.02_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/14.04.02_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/14.04.02_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -980,10 +980,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/14.04.02_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/14.04.02_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/14.04.02_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/14.04.02_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -1024,10 +1024,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/18.04.01_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/18.04.01_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/18.04.01_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/18.04.01_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -1071,10 +1071,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/18.04.01_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/18.04.01_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/18.04.01_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/18.04.01_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -1120,10 +1120,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/18.04.01_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/18.04.01_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/18.04.01_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/18.04.01_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -1165,10 +1165,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/22.04.01_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/22.04.01_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/22.04.01_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/22.04.01_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -1211,10 +1211,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/27.04.01_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/27.04.01_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/27.04.01_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/27.04.01_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -1259,10 +1259,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/27.04.05_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/27.04.05_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/27.04.05_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/27.04.05_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -1305,10 +1305,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/28.04.02_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/28.04.02_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/28.04.02_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/28.04.02_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -1349,10 +1349,10 @@
                 </div>
                 <div class="places_and_score">
                   <div class="programs_slider_places">
-                    <a href="docs/39.04.02_1.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/39.04.02_1.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
-                    <a href="docs/39.04.02_2.pdf" target="_blank">
+                    <a href="docs/Направления подготовки/39.04.02_2.pdf" target="_blank">
                       <img src="img/icons/filetype-pdf.svg" alt="Ссылка на скачивание" />
                     </a>
                     <p class="text">вступительные испытания</p>
@@ -1434,32 +1434,32 @@
       </div>
       <div class="information_docs">
         <div class="doc">
-          <a href="/docs/Pravila_priema_bakalavriat_i_specialitet_2022.pdf" target="_blank"
+          <a href="/docs/Документы абитуриенты/Pravila_priema_bakalavriat_i_specialitet_2022.pdf" target="_blank"
             >Правила приема граждан на обучение по программам бакалавриата и специалитета</a
           >
         </div>
         <div class="doc">
-          <a href="docs/Pravila_priema_magistratura_2022.pdf" target="_blank"
+          <a href="/docs/Документы абитуриенты/Pravila_priema_magistratura_2022.pdf" target="_blank"
             >Правила приема граждан на обучение по программам магистратуры</a
           >
         </div>
         <div class="doc">
-          <a href="docs/Pravila_priema_2022.pdf" target="_blank"
+          <a href="/docs/Документы абитуриенты/Pravila_priema_2022.pdf" target="_blank"
             >Алгоритм поступления в 2022 году (бакалавриат и специалитет)</a
           >
         </div>
         <div class="doc">
-          <a href="docs/Informacija_o_porjadke_ucheta_individualnykh_dostizhenii.pdf" target="_blank"
+          <a href="/docs/Документы абитуриенты/Informacija_o_porjadke_ucheta_individualnykh_dostizhenii.pdf" target="_blank"
             >Информация о порядке учета индивидуальных достижений поступающих</a
           >
         </div>
         <div class="doc">
-          <a href="docs/Perechen_dokumentov_dlja_postupajushchikh_s_osobymi_pravami.pdf" target="_blank"
+          <a href="/docs/Документы абитуриенты/Perechen_dokumentov_dlja_postupajushchikh_s_osobymi_pravami.pdf" target="_blank"
             >Перечень документов для поступающих с особыми правами</a
           >
         </div>
         <div class="doc">
-          <a href="docs/Lgoty_pobediteljam_i_prizeram_olimpiad.pdf" target="_blank"
+          <a href="/docs/Документы абитуриенты/Lgoty_pobediteljam_i_prizeram_olimpiad.pdf" target="_blank"
             >Льготы победителям и призерам олимпиад</a
           >
         </div>

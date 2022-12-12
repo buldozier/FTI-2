@@ -9,6 +9,8 @@ const innerOverlayEvents = document.querySelector('.inner_overlay');
 const thumbCommissions = document.querySelectorAll('.thumb');
 const commissions = document.querySelectorAll('.commission');
 
+const photoBtn = document.querySelector('.show_photo');
+
 const btnToTop = document.querySelector('.btn_to_top');
 
 const eventsObj = new Events();
@@ -116,6 +118,16 @@ thumbCommissions.forEach(el => {
       elContent.style.maxHeight = elContent.scrollHeight + 'px';
     }
   });
+});
+
+// Gallery
+
+photoBtn.addEventListener('click', () => {
+  const hiddenPhotos = document.querySelectorAll('.hidden_photo');
+  hiddenPhotos.forEach(el => {
+    el.classList.remove('hidden_photo');
+  });
+  photoBtn.style.display = 'none';
 });
 
 // Functions

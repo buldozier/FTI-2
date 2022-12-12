@@ -35,7 +35,7 @@
   margin-bottom: 60px;
 }
 
-.about_button {
+.button {
   display: flex;
   width: 140px;
   height: 50px;
@@ -47,7 +47,7 @@
   transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
 }
 
-.about_button:active {
+.button:active {
   color: #0f0d0e;
   background-color: #fcba28;
 }
@@ -337,6 +337,91 @@
   margin: auto;
 }
 
+/* Gallery */
+
+.gallery_inner {
+  margin-top: 40px;
+}
+
+.gallery_header {
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photo {
+  width: 340px;
+  border-radius: 10px;
+}
+
+.hidden_photo {
+  display: none;
+}
+
+.gallery_inner .buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gallery_inner .buttons a {
+  text-decoration: none;
+}
+
+/* Enrollee information */
+
+.information_inner {
+  margin-top: 40px;
+}
+
+.information_docs {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.doc {
+  display: flex;
+  width: 325px;
+  position: relative;
+  height: 34px;
+}
+
+.doc a {
+  margin-left: 40px;
+  color: #f9f4da;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.doc a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./../img/icons/filetype_pdf_yellow.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.docx a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./../img/icons/filetype-docx.svg);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 680px;
@@ -443,6 +528,20 @@
     width: 170px;
     order: 3;
   }
+
+  /* Gallery */
+
+  .photo {
+    width: 330px;
+  }
+
+  .hidden_photo {
+    display: block;
+  }
+
+  .show_photo {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -492,7 +591,7 @@
     margin-bottom: 0;
   }
 
-  .about_button:hover {
+  .button:hover {
     color: #0f0d0e;
     background-color: #fcba28;
   }
@@ -665,6 +764,55 @@
     width: 170px;
     order: 3;
   }
+
+  /* Gallery */
+
+  .gallery_inner {
+    margin-top: 100px;
+  }
+
+  .gallery_inner .buttons {
+    margin-top: 30px;
+  }
+
+  .photos {
+    gap: 30px;
+  }
+
+  .photo {
+    width: 470px;
+  }
+
+  /* Enrollee information */
+
+  .information_inner {
+    margin-top: 100px;
+  }
+
+  .information_docs {
+    margin-top: 50px;
+    gap: 50px;
+  }
+
+  .doc {
+    width: 460px;
+    height: 44px;
+  }
+
+  .doc a {
+    margin-left: 60px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .doc a::before {
+    top: 0px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -683,7 +831,7 @@
     margin-bottom: 0;
   }
 
-  .about_button {
+  .button {
     width: 160px;
   }
 
@@ -737,5 +885,21 @@
 
   .content_text {
     width: 560px;
+  }
+
+  /* Gallery */
+
+  .photos {
+    justify-content: center;
+  }
+
+  .photo {
+    width: 550px;
+  }
+
+  /* Enrollee information */
+
+  .doc {
+    width: 550px;
   }
 }
