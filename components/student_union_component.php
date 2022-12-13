@@ -480,7 +480,7 @@
   </div>
   <div class="information_inner">
     <div class="container">
-      <h2>Документы</h2>
+      <h2 class="information_header">Документы</h2>
       <div class="information_docs">
         <div class="doc">
           <a href="/docs/Документы Союз студентов/Pamyatka_Matpomosch.pdf" target="_blank"
@@ -499,7 +499,7 @@
         </div>
         <div class="doc docx">
           <a href="/docs/Документы Союз студентов/Byudzhet_GUK-309__Blank_zayavlenia_na_mat_pomosch.docx" target="_blank"
-            >Блан заявления на материальную поддержку (университет)</a
+            >Бланк заявления на материальную поддержку (университет)</a
           >
         </div>
         <div class="doc">

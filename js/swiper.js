@@ -6,13 +6,11 @@ export const swiper = new Swiper('.swiper', {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      allowTouchMove: true,
     },
 
     1024: {
       slidesPerView: 3,
       slidesPerGroup: 3,
-      allowTouchMove: false,
     },
   },
 

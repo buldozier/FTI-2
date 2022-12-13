@@ -11,6 +11,12 @@ const commissions = document.querySelectorAll('.commission');
 
 const photoBtn = document.querySelector('.show_photo');
 
+// Scroll buttons
+const eventsBtn = document.querySelector('.events_btn');
+const teamBtn = document.querySelector('.team_btn');
+const galleryBtn = document.querySelector('.gallery_btn');
+const docsBtn = document.querySelector('.documents_btn');
+
 const btnToTop = document.querySelector('.btn_to_top');
 
 const eventsObj = new Events();
@@ -49,6 +55,29 @@ class CreateEvent {
     createElement('close_btn', overlayContent);
   }
 }
+
+// Scroll
+
+eventsBtn.addEventListener('click', () => {
+  const eventsPosition = document.querySelector('.events_header').getBoundingClientRect().y + window.pageYOffset - 50;
+  window.scrollTo(0, eventsPosition);
+});
+
+teamBtn.addEventListener('click', () => {
+  const teamPosition = document.querySelector('.team_header').getBoundingClientRect().y + window.pageYOffset - 50;
+  window.scrollTo(0, teamPosition);
+});
+
+galleryBtn.addEventListener('click', () => {
+  const galleryPosition = document.querySelector('.gallery_header').getBoundingClientRect().y + window.pageYOffset - 50;
+  window.scrollTo(0, galleryPosition);
+});
+
+docsBtn.addEventListener('click', () => {
+  const docsPosition =
+    document.querySelector('.information_header').getBoundingClientRect().y + window.pageYOffset - 50;
+  window.scrollTo(0, docsPosition);
+});
 
 // Events
 
