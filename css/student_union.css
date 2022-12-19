@@ -47,7 +47,8 @@
   transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
 }
 
-.button:active {
+.button:active,
+.button:hover {
   color: #0f0d0e;
   background-color: #fcba28;
 }
@@ -343,9 +344,6 @@
   margin-top: 50px;
 }
 
-.gallery_header {
-}
-
 .photos {
   display: flex;
   flex-wrap: wrap;
@@ -589,11 +587,6 @@
     justify-content: flex-start;
     cursor: pointer;
     margin-bottom: 0;
-  }
-
-  .button:hover {
-    color: #0f0d0e;
-    background-color: #fcba28;
   }
 
   /* Events */
@@ -862,15 +855,6 @@
   }
 
   /* Team */
-
-  .person {
-    /* width: 180px; */
-  }
-
-  .person img {
-    /* width: 180px;
-    height: 180px; */
-  }
 
   .firstname,
   .surname {

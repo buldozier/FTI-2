@@ -362,7 +362,7 @@
               <p>Аудитория</p>
               <p class="audience_number">Ф-206</p>
               <p class="service_phone">
-                Телефон:&nbsp; <a href="tel:+73433754151" class="phone">+7 (343) 375-41-51</a>
+                Телефон:&nbsp; <a href="tel:+73433759497" class="phone">+7 (343) 375-94-97</a>
               </p>
             </div>
             <div class="service_specialists">
@@ -409,7 +409,7 @@
               <p>Аудитория</p>
               <p class="audience_number">Ф-207</p>
               <p class="service_phone">
-                Телефон:&nbsp; <a href="tel:+73433754151" class="phone">+7 (343) 375-41-51</a>
+                Телефон:&nbsp; <a href="tel:+73433754155" class="phone">+7 (343) 375-41-55</a>
               </p>
               <p>Часы приема : 13:30 - 14:30</p>
             </div>
@@ -438,14 +438,131 @@
               <b class="service_competencies_header">Компетенции</b>
               <ul>
                 <li class="competence">
-                  организация финансовой и административно-хозяйственной деятельности Института
+									процесс обучения
                 </li>
-                <li class="competence">техническая поддержка ИТ-инфраструктуры ФТИ</li>
-                <li class="competence">поселение в общежитие</li>
                 <li class="competence">
-                  вопросы, связанные с проживанием в общежитии (в т.ч. выдача справок о непоселении первому курсу)
+									сдачи сессии и академических задолженностей
+								</li>
+                <li class="competence">
+									вопросы, касающиеся работы старост академических групп
+								</li>
+                <li class="competence">
+									вопросы о переводе
                 </li>
-                <li class="competence">вопросы, касающиеся работы кураторов академических групп</li>
+                <li class="competence">
+									заявления о пропуске пар по уважительной причине
+								</li>
+								<li class="competence">
+									утеря, изъятие студенческого билета
+								</li>
+								<li class="competence">
+									выдача "хвостовок"
+								</li>
+								<li class="competence">
+									вопросы о переводе, отчислении
+								</li>
+								<li class="competence">
+									именные стипендии
+								</li>
+              </ul>
+            </div>
+          </div>
+					<!-- Ф-208 -->
+          <div class="service">
+            <div class="service_audience">
+              <p>Аудитория</p>
+              <p class="audience_number">Ф-208</p>
+              <p class="service_phone">
+                Телефон:&nbsp; <a href="tel:+73433754782" class="phone">+7 (343) 375-47-82</a>
+              </p>
+            </div>
+            <div class="service_specialists">
+              <b class="service_specialists_header">Специалисты</b>
+              <ul>
+                <li class="specialist">
+                  <b>Исупова Надежда Владимировна</b>
+                  <p>заместитель начальника отдела организации учебной работы</p>
+                </li>
+                <li class="specialist">
+                  <b>Иващенко Екатерина Станиславовна</b>
+                  <p>старший инспектор отдела организации учебной работы</p>
+                </li>
+              </ul>
+            </div>
+            <div class="service_competencies">
+              <b class="service_competencies_header">Компетенции</b>
+              <ul>
+                <li class="competence">
+									выдача справок (о факте обучения в институте не для Пенсионного Фонда России)
+                </li>
+                <li class="competence">
+									назначение академических и социальных стипендий
+								</li>
+                <li class="competence">
+									вопросы, касающиеся корректности назначения стипендий
+								</li>
+              </ul>
+            </div>
+          </div>
+					<!-- Ф-209 -->
+          <div class="service">
+            <div class="service_audience">
+              <p>Аудитория</p>
+              <p class="audience_number">Ф-209</p>
+              <p class="service_phone">
+                Телефон:&nbsp; <a href="tel:+73433754154" class="phone">+7 (343) 375-41-54</a>
+              </p>
+            </div>
+            <div class="service_specialists">
+              <b class="service_specialists_header">Специалисты</b>
+              <ul>
+                <li class="specialist">
+                  <b>Иванов Владимир Юрьевич</b>
+                  <p>директор ФТИ, кандидат физико-математических наук</p>
+                </li>
+                <li class="specialist">
+                  <b>Ярина Елена Борисовна</b>
+                  <p>помощник директора</p>
+                </li>
+              </ul>
+            </div>
+            <div class="service_competencies">
+              <b class="service_competencies_header">Компетенции</b>
+              <ul>
+                <li class="competence">
+									руководство Институтом
+                </li>
+              </ul>
+            </div>
+          </div>
+					<!-- Ф-216 -->
+          <div class="service">
+            <div class="service_audience">
+              <p>Аудитория</p>
+              <p class="audience_number">Ф-216</p>
+              <p class="service_phone">
+                Телефон:&nbsp; <a href="tel:+73433759537" class="phone">+7 (343) 375-95-37</a>
+              </p>
+            </div>
+            <div class="service_specialists">
+              <b class="service_specialists_header">Специалисты</b>
+              <ul>
+                <li class="specialist">
+                  <b>Макарова Ирина Евгеньевна</b>
+                  <p>заместитель начальника отдела, старший диспетчер отдела организации учебной работы</p>
+                </li>
+                <li class="specialist">
+                  <b>Карташова Елена Сергеевна</b>
+                  <p>старший инспектор отдела организации учебной работы</p>
+                </li>
+              </ul>
+            </div>
+            <div class="service_competencies">
+              <b class="service_competencies_header">Компетенции</b>
+              <ul>
+                <li class="competence">
+									составление расписания занятий по образовательным программам бакалавриата, специалитета и магистратуры ФТИ
+                </li>
               </ul>
             </div>
           </div>

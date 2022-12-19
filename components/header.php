@@ -21,7 +21,7 @@
                 <a href="student_union.php" class="nav_button <?= $header3 ?>">Союз студентов ФТИ</a>
               </li>
               <li class="menu_item">
-                <a href="#" class="nav_button <?= $header4 ?>">Полезные контакты</a>
+                <a href="contacts.php" class="nav_button <?= $header4 ?>">Полезные контакты</a>
               </li>
             </ul>
           </nav>
@@ -50,7 +50,7 @@
             <a href="student_union.php" class="nav_button <?= $header3 ?>">Союз студентов ФТИ</a>
           </li>
           <li class="menu_item">
-            <a href="#" class="nav_button <?= $header4 ?>">Полезные контакты</a>
+            <a href="contacts.php" class="nav_button <?= $header4 ?>">Полезные контакты</a>
           </li>
         </ul>
       </nav>

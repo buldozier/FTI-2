@@ -1,0 +1,430 @@
+.container {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+/* Administration */
+
+.administration_inner {
+  margin-bottom: 50px;
+}
+
+.administration_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.person_card {
+  display: flex;
+  gap: 15px;
+}
+
+.hidden_card {
+  display: none;
+}
+
+.person_photo {
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 3px 3px #fcba28;
+}
+
+.director_photo {
+  height: 186px;
+  border-radius: 10px;
+  box-shadow: 3px 3px #fcba28;
+}
+
+.person_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.person_info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 140px;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.post {
+  font-weight: 500;
+}
+
+.academic_degree {
+  font-size: 12px;
+}
+
+.person_contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  margin-left: -5px;
+  padding-left: 5px;
+  border-left: 1px solid #fcba28;
+}
+
+.phone,
+.mail {
+  color: #f9f4da;
+}
+
+.office,
+.person_phone,
+.person_mail {
+  position: relative;
+  padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.office::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background: url(./../img/icons/door-closed_yellow.svg);
+  background-size: contain;
+}
+
+.person_phone::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background: url(./../img/icons/telephone_yellow.svg);
+  background-size: contain;
+}
+
+.person_mail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background: url(./../img/icons/envelope_yellow.svg);
+  background-size: contain;
+}
+
+.show_btns {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.show_more_btn,
+.show_all_btn {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #fcba28;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #fcba28;
+  transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+  cursor: pointer;
+}
+
+.show_more_btn:active,
+.show_all_btn:active,
+.show_more_btn:hover,
+.show_all_btn:hover {
+  color: #0f0d0e;
+  background-color: #fcba28;
+}
+
+/* Services */
+
+.block_header {
+  display: none;
+}
+
+.block_content {
+  display: flex;
+  flex-direction: column;
+	gap: 30px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f4da;
+  color: #0f0d0e;
+  padding: 20px 15px;
+  border-radius: 20px;
+  gap: 32px;
+}
+
+.service_audience {
+  display: flex;
+  flex-direction: column;
+  color: #0f0d0e;
+  font-weight: bold;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  gap: 15px;
+}
+
+.service_phone .phone {
+  color: #0f0d0e;
+}
+
+.block_content ul {
+  list-style: none;
+}
+
+.service_specialists,
+.service_competencies {
+	position: relative;
+}
+
+.service_specialists::before,
+.service_competencies::before {
+	content: '';
+	position: absolute;
+	left: 10%;
+	top: -15px;
+	width: 80%;
+	height: 2px;
+	background-color: #fcba28;
+}
+
+.service_specialists ul,
+.service_competencies ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 30px;
+	margin-top: 15px;
+}
+
+.service_specialists_header,
+.service_competencies_header {
+	display: flex;
+	justify-content: center;
+}
+
+.specialist,
+.competence {
+  position: relative;
+	gap: 10px;
+}
+
+.specialist::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -27px;
+  height: 17px;
+  width: 17px;
+  background: url(./../img/icons/suit-diamond-fill_yellow.svg);
+  background-size: contain;
+}
+
+.competence::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -27px;
+  height: 17px;
+  width: 17px;
+  background: url(./../img/icons/suit-diamond-fill_blue.svg);
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 680px;
+  }
+
+  /* Administration */
+
+  .administration_cards {
+    gap: 40px 20px;
+  }
+
+  .person_card {
+    width: 330px;
+  }
+
+  .director_card {
+    width: 100%;
+    gap: 50px;
+  }
+
+  .director_card .name {
+    font-size: 24px;
+  }
+
+  .director_photo {
+    height: 250px;
+  }
+
+  .person_contacts {
+    margin-left: -10px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 970px;
+  }
+
+  /* Administration */
+
+  .administration_inner {
+    margin-bottom: 100px;
+  }
+
+  .administration_cards {
+    gap: 50px 30px;
+  }
+
+  .person_card {
+    width: 470px;
+    gap: 20px;
+  }
+
+  .academic_degree {
+    font-size: 16px;
+  }
+
+  .director_card {
+    width: 100%;
+    gap: 50px;
+  }
+
+  .director_card .academic_degree {
+    font-size: 18px;
+  }
+
+  .director_photo {
+    height: 350px;
+  }
+
+  .person_info {
+    height: 160px;
+    gap: 15px;
+  }
+
+  .director_card .person_info,
+  .director_card .person_contacts {
+    gap: 30px;
+  }
+
+  .director_card .person_info .name {
+    font-size: 32px;
+  }
+
+  .director_card .person_content {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .person_contacts {
+    gap: 15px;
+  }
+
+  .office,
+  .person_phone,
+  .person_mail {
+    padding-left: 30px;
+  }
+
+  .office::before {
+    height: 22px;
+    width: 22px;
+  }
+
+  .person_phone::before {
+    height: 22px;
+    width: 22px;
+  }
+
+  .person_mail::before {
+    height: 22px;
+    width: 22px;
+  }
+
+  .show_btns {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+
+  /* Administration */
+
+  .administration_cards {
+    gap: 50px;
+  }
+
+  .person_card {
+    width: 560px;
+    gap: 20px;
+  }
+
+  .director_card {
+    width: 100%;
+    gap: 50px;
+    font-size: 24px;
+  }
+
+  .director_card .person_info {
+    height: 200px;
+  }
+
+  .director_card .academic_degree {
+    font-size: 24px;
+  }
+
+  .director_photo {
+    height: 450px;
+  }
+
+  .person_info .name {
+    font-size: 24px;
+  }
+
+  .director_card .office,
+  .director_card .person_phone,
+  .director_card .person_mail {
+    padding-left: 40px;
+  }
+
+  .director_card .office::before {
+    height: 29px;
+    width: 29px;
+  }
+
+  .director_card .person_phone::before {
+    height: 29px;
+    width: 29px;
+  }
+
+  .director_card .person_mail::before {
+    height: 29px;
+    width: 29px;
+  }
+}
