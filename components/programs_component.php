@@ -763,7 +763,7 @@
                   </div>
                 </div>
               </div>
-              <a href="https://programs.edu.urfu.ru/ru/9969/" class="programs_slider_button">
+              <a href="https://programs.edu.urfu.ru/ru/9971/" class="programs_slider_button">
                 <p>Подробнее о направлении</p>
               </a>
             </div>

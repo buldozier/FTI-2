@@ -151,6 +151,10 @@
 
 /* Services */
 
+.services_inner {
+  margin-bottom: 50px;
+}
+
 .block_header {
   display: none;
 }
@@ -158,7 +162,7 @@
 .block_content {
   display: flex;
   flex-direction: column;
-	gap: 30px;
+  gap: 30px;
 }
 
 .service {
@@ -192,18 +196,18 @@
 
 .service_specialists,
 .service_competencies {
-	position: relative;
+  position: relative;
 }
 
 .service_specialists::before,
 .service_competencies::before {
-	content: '';
-	position: absolute;
-	left: 10%;
-	top: -15px;
-	width: 80%;
-	height: 2px;
-	background-color: #fcba28;
+  content: '';
+  position: absolute;
+  left: 10%;
+  top: -15px;
+  width: 80%;
+  height: 2px;
+  background-color: #fcba28;
 }
 
 .service_specialists ul,
@@ -212,19 +216,19 @@
   flex-direction: column;
   gap: 15px;
   padding-left: 30px;
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 .service_specialists_header,
 .service_competencies_header {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .specialist,
 .competence {
   position: relative;
-	gap: 10px;
+  gap: 10px;
 }
 
 .specialist::before {
@@ -247,6 +251,39 @@
   width: 17px;
   background: url(./../img/icons/suit-diamond-fill_blue.svg);
   background-size: contain;
+}
+
+/* Subdivisions */
+
+.subdivision_header {
+  margin-bottom: 50px;
+}
+
+.subdivision_list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 30px;
+}
+
+.subdivision {
+  position: relative;
+}
+
+.subdivision::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -27px;
+  height: 17px;
+  width: 17px;
+  background: url(./../img/icons/suit-diamond-fill_yellow.svg);
+  background-size: contain;
+}
+
+.subdivision_phone .phone {
+  color: #f9f4da;
 }
 
 @media (min-width: 768px) {
@@ -367,6 +404,98 @@
   .show_btns {
     margin-top: 50px;
   }
+
+  /* Services */
+
+  .services_inner {
+    margin-bottom: 100px;
+  }
+
+  .services_block {
+    background-color: #f9f4da;
+    border-radius: 20px;
+    color: #0f0d0e;
+    padding: 40px 20px;
+  }
+
+  .block_header {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 30px;
+    font-weight: bold;
+  }
+
+  .audience {
+    width: 270px;
+    text-align: center;
+  }
+
+  .specialists,
+  .competencies {
+    width: 300px;
+    text-align: center;
+  }
+
+  .specialist::before,
+  .competence::before {
+    left: -32px;
+    height: 22px;
+    width: 22px;
+  }
+
+  .block_content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+    position: relative;
+  }
+
+  .service::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    width: 2px;
+    height: 100%;
+    background-color: #fcba28;
+  }
+
+  .service_audience_header,
+  .service_specialists_header,
+  .service_competencies_header {
+    display: none;
+  }
+
+  .service_specialists,
+  .service_competencies {
+    width: 300px;
+  }
+
+  .service_specialists ul,
+  .service_competencies ul {
+    gap: 15px;
+    padding-left: 35px;
+    margin-top: 0;
+  }
+
+  .service_specialists::before,
+  .service_competencies::before {
+    display: none;
+  }
+
+  /* Subdivisions */
+
+  .subdivision::before {
+    left: -32px;
+    height: 22px;
+    width: 22px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -426,5 +555,31 @@
   .director_card .person_mail::before {
     height: 29px;
     width: 29px;
+  }
+
+  /* Services */
+
+  .audience {
+    width: 330px;
+    text-align: center;
+  }
+
+  .specialists,
+  .competencies {
+    width: 370px;
+    text-align: center;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0;
+    position: relative;
+  }
+
+  .service_specialists,
+  .service_competencies {
+    width: 370px;
   }
 }

@@ -359,11 +359,9 @@
           <!-- Ф-206 -->
           <div class="service">
             <div class="service_audience">
-              <p>Аудитория</p>
+              <p class="service_audience_header">Аудитория</p>
               <p class="audience_number">Ф-206</p>
-              <p class="service_phone">
-                Телефон:&nbsp; <a href="tel:+73433759497" class="phone">+7 (343) 375-94-97</a>
-              </p>
+              <p class="service_phone">Телефон: <a href="tel:+73433759497" class="phone">+7 (343) 375-94-97</a></p>
             </div>
             <div class="service_specialists">
               <b class="service_specialists_header">Специалисты</b>
@@ -406,11 +404,9 @@
           <!-- Ф-207 -->
           <div class="service">
             <div class="service_audience">
-              <p>Аудитория</p>
+              <p class="service_audience_header">Аудитория</p>
               <p class="audience_number">Ф-207</p>
-              <p class="service_phone">
-                Телефон:&nbsp; <a href="tel:+73433754155" class="phone">+7 (343) 375-41-55</a>
-              </p>
+              <p class="service_phone">Телефон: <a href="tel:+73433754155" class="phone">+7 (343) 375-41-55</a></p>
               <p>Часы приема : 13:30 - 14:30</p>
             </div>
             <div class="service_specialists">
@@ -437,44 +433,24 @@
             <div class="service_competencies">
               <b class="service_competencies_header">Компетенции</b>
               <ul>
-                <li class="competence">
-									процесс обучения
-                </li>
-                <li class="competence">
-									сдачи сессии и академических задолженностей
-								</li>
-                <li class="competence">
-									вопросы, касающиеся работы старост академических групп
-								</li>
-                <li class="competence">
-									вопросы о переводе
-                </li>
-                <li class="competence">
-									заявления о пропуске пар по уважительной причине
-								</li>
-								<li class="competence">
-									утеря, изъятие студенческого билета
-								</li>
-								<li class="competence">
-									выдача "хвостовок"
-								</li>
-								<li class="competence">
-									вопросы о переводе, отчислении
-								</li>
-								<li class="competence">
-									именные стипендии
-								</li>
+                <li class="competence">процесс обучения</li>
+                <li class="competence">сдачи сессии и академических задолженностей</li>
+                <li class="competence">вопросы, касающиеся работы старост академических групп</li>
+                <li class="competence">вопросы о переводе</li>
+                <li class="competence">заявления о пропуске пар по уважительной причине</li>
+                <li class="competence">утеря, изъятие студенческого билета</li>
+                <li class="competence">выдача "хвостовок"</li>
+                <li class="competence">вопросы о переводе, отчислении</li>
+                <li class="competence">именные стипендии</li>
               </ul>
             </div>
           </div>
-					<!-- Ф-208 -->
+          <!-- Ф-208 -->
           <div class="service">
             <div class="service_audience">
-              <p>Аудитория</p>
+              <p class="service_audience_header">Аудитория</p>
               <p class="audience_number">Ф-208</p>
-              <p class="service_phone">
-                Телефон:&nbsp; <a href="tel:+73433754782" class="phone">+7 (343) 375-47-82</a>
-              </p>
+              <p class="service_phone">Телефон: <a href="tel:+73433754782" class="phone">+7 (343) 375-47-82</a></p>
             </div>
             <div class="service_specialists">
               <b class="service_specialists_header">Специалисты</b>
@@ -493,25 +469,19 @@
               <b class="service_competencies_header">Компетенции</b>
               <ul>
                 <li class="competence">
-									выдача справок (о факте обучения в институте не для Пенсионного Фонда России)
+                  выдача справок (о факте обучения в институте не для Пенсионного Фонда России)
                 </li>
-                <li class="competence">
-									назначение академических и социальных стипендий
-								</li>
-                <li class="competence">
-									вопросы, касающиеся корректности назначения стипендий
-								</li>
+                <li class="competence">назначение академических и социальных стипендий</li>
+                <li class="competence">вопросы, касающиеся корректности назначения стипендий</li>
               </ul>
             </div>
           </div>
-					<!-- Ф-209 -->
+          <!-- Ф-209 -->
           <div class="service">
             <div class="service_audience">
-              <p>Аудитория</p>
+              <p class="service_audience_header">Аудитория</p>
               <p class="audience_number">Ф-209</p>
-              <p class="service_phone">
-                Телефон:&nbsp; <a href="tel:+73433754154" class="phone">+7 (343) 375-41-54</a>
-              </p>
+              <p class="service_phone">Телефон: <a href="tel:+73433754154" class="phone">+7 (343) 375-41-54</a></p>
             </div>
             <div class="service_specialists">
               <b class="service_specialists_header">Специалисты</b>
@@ -529,20 +499,16 @@
             <div class="service_competencies">
               <b class="service_competencies_header">Компетенции</b>
               <ul>
-                <li class="competence">
-									руководство Институтом
-                </li>
+                <li class="competence">руководство Институтом</li>
               </ul>
             </div>
           </div>
-					<!-- Ф-216 -->
+          <!-- Ф-216 -->
           <div class="service">
             <div class="service_audience">
-              <p>Аудитория</p>
+              <p class="service_audience_header">Аудитория</p>
               <p class="audience_number">Ф-216</p>
-              <p class="service_phone">
-                Телефон:&nbsp; <a href="tel:+73433759537" class="phone">+7 (343) 375-95-37</a>
-              </p>
+              <p class="service_phone">Телефон: <a href="tel:+73433759537" class="phone">+7 (343) 375-95-37</a></p>
             </div>
             <div class="service_specialists">
               <b class="service_specialists_header">Специалисты</b>
@@ -561,13 +527,68 @@
               <b class="service_competencies_header">Компетенции</b>
               <ul>
                 <li class="competence">
-									составление расписания занятий по образовательным программам бакалавриата, специалитета и магистратуры ФТИ
+                  составление расписания занятий по образовательным программам бакалавриата, специалитета и магистратуры
+                  ФТИ
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="subdivision_inner">
+    <div class="container">
+      <h2 class="subdivision_header">Контактная информация подразделений УрФУ</h2>
+      <ul class="subdivision_list">
+        <li class="subdivision">
+          <p class="subdivision_phone">
+            Второй отдел — И-224, телефон: <a href="tel:+73433754828" class="phone">+7 (343) 375-48-28</a>
+          </p>
+        </li>
+        <li class="subdivision">
+          <p class="subdivision_phone">
+            Отдел по работе со студентами (в т.ч. выдача справок о факте обучения в институте для Пенсионного Фонда
+            России) — И-216, телефон: <a href="tel:+73433754512" class="phone">+7 (343) 375-45-12</a>
+          </p>
+        </li>
+        <li class="subdivision">
+          <p class="subdivision_phone">
+            Медико-санитарная часть университета (МСЧ) — Комсомольская, 59б, телефон регистратуры:
+            <a href="tel:+73433753450" class="phone">+7 (343) 374-34-50</a>
+          </p>
+        </li>
+        <li class="subdivision">
+          <p class="subdivision_phone">
+            Бухгалтерия, группа по расчету стипендий — М-230, телефон:
+            <a href="tel:+73433754109" class="phone">+7 (343) 375-41-09</a>
+          </p>
+        </li>
+        <li class="subdivision">
+          <p class="subdivision_phone">
+            Центр адаптации иностранных студентов — ГУК-209, телефон:
+            <a href="tel:+73433754193" class="phone">+7 (343) 375-41-93</a>
+          </p>
+        </li>
+        <li class="subdivision">
+          <p class="subdivision_phone">
+            Отдел сопровождения государственной аттестации — И-217, телефон:
+            <a href="tel:+73433753052" class="phone">+7 (343) 374-30-52</a>
+          </p>
+        </li>
+        <li class="subdivision">
+          <p class="subdivision_phone">
+            Отдел по работе со студентами (в т.ч. выдача справок о факте обучения в институте для Пенсионного Фонда
+            России) — И-216, телефон: <a href="tel:+73433754507" class="phone">+7 (343) 375-45-07</a>
+          </p>
+        </li>
+        <li class="subdivision">
+          <p class="subdivision_phone">
+            Техподдержка (учетная запись, личный кабинет, БРС): телефон:
+            <a href="tel:+73432272070" class="phone">+7 (343) 227-20-70</a>
+          </p>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

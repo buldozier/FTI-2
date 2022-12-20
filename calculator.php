@@ -1,9 +1,14 @@
 <?php
 
-$hn = '127.0.0.1';
-$un = 'root';
-$pw = 'root';
-$db = 'programs_ege';
+// $hn = '127.0.0.1';
+// $un = 'root';
+// $pw = 'root';
+// $db = 'programs_ege';
+
+$hn = '10.0.2.30';
+$un = 'buldozier';
+$pw = 'buldozier';
+$db = 'f0756894_programs_ege';
 
 $connection = new mysqli($hn, $un, $pw, $db);
 
