@@ -104,14 +104,8 @@ async function handleFormSubmit(event) {
         createTestObject(re, objChem, '2');
 
         const responseObject = Object.assign(objPhys, objInf, objChem);
-
         removeAdvise();
-        // const respObjAll = document.querySelectorAll('.response_object');
-        // respObjAll.forEach(el => {
-        //   el.remove();
-        // });
 
-        console.log(responseObject);
 
         if (Object.keys(responseObject).length !== 0) {
           createResponseMarkup();

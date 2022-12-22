@@ -11,6 +11,10 @@
   margin-bottom: 40px;
 }
 
+.about_title {
+  text-align: left;
+}
+
 .about_picture {
   display: inline-block;
   position: absolute;
@@ -48,6 +52,7 @@
   align-items: center;
   color: #fcba28;
   transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+  user-select: none;
 }
 
 .about_button:active {
@@ -80,25 +85,22 @@
 
 .people_fti_photos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px 0;
 }
 
 .people_fti_photo {
-  width: 250px;
+  width: 140px;
   text-align: center;
 }
 
-.people_fti_photo p {
-  height: 44px;
-}
 
 .people_fti_photo img {
   margin-bottom: 25px;
   border-radius: 20px;
   box-shadow: 3px 3px #fcba28;
-  width: 250px;
+  width: 100%;
 }
 
 .people_fti_photo h3 {
@@ -255,7 +257,6 @@
   .people_fti_photos {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   /* Departments */
@@ -341,7 +342,7 @@
   }
 
   .people_fti_photo {
-    width: 300px;
+    width: 250px;
     text-align: center;
   }
 
@@ -349,7 +350,7 @@
     margin-bottom: 30px;
     border-radius: 20px;
     box-shadow: 5px 5px #fcba28;
-    width: 300px;
+    width: 100%;
   }
 
   /* Departments */

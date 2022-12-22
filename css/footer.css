@@ -82,6 +82,8 @@
   border-radius: 10px;
   border: 1px solid #0f0d0e;
   transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+  user-select: none;
+
 }
 
 .footer_btn:active {

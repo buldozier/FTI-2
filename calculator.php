@@ -5,16 +5,18 @@
 // $pw = 'root';
 // $db = 'programs_ege';
 
-$hn = '10.0.2.30';
-$un = 'buldozier';
-$pw = 'buldozier';
-$db = 'f0756894_programs_ege';
+$hn = 'localhost';
+$un = 'vladvr2012';
+$pw = '92J9Mp-Y6M6YYEFK';
+$db = 'vladvr2012';
 
 $connection = new mysqli($hn, $un, $pw, $db);
+
 
 $score_phys = $_GET['egeSumPhys'];
 $score_inf = $_GET['egeSumInf'];
 $score_chem = $_GET['egeSumChem'];
+
 
 if($score_phys !== 0) {
 	$phys_list = $connection->query("SELECT * FROM `ege` WHERE score < $score_phys");
@@ -33,3 +35,5 @@ $data['0'] = $phys_list->fetch_all();
 $data['1'] = $inf_list->fetch_all();
 $data['2'] = $chem_list->fetch_all();
 echo json_encode($data);
+
+

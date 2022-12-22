@@ -40,6 +40,7 @@
 .about_programs_info h2 {
   margin-bottom: 0;
   padding: 20px;
+  text-align: left;
 }
 
 .about_programs_count h2 {
@@ -369,6 +370,7 @@
 }
 
 .calculator_subjects input {
+  width: 50px;
   padding: 15px;
   color: #f9f4da;
   border: 1px solid #f9f4da;
@@ -377,6 +379,9 @@
   outline: none;
   align-self: center;
   text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .calculator_subjects_invalid {
@@ -386,6 +391,7 @@
 input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  margin: 0;
 }
 
 .calculator_subject label {
@@ -399,6 +405,7 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .submit_ege {
+  font-family: 'Roboto', sans-serif;
   padding: 15px;
   border-radius: 10px;
   color: #0f0d0e;
@@ -460,14 +467,13 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .resp_code {
-  margin: 0 auto;
+  margin-left: auto;
   font-size: 14px;
 }
 
 .resp_score,
 .resp_places {
   margin-left: auto;
-  position: relative;
 }
 
 .resp_code::before {
@@ -479,14 +485,14 @@ input[type='number']::-webkit-inner-spin-button {
 .resp_score::before {
   content: 'Проходной балл:';
   position: absolute;
-  left: -273px;
+  left: 15px;
 }
 
 .resp_score::after {
   content: '';
   position: absolute;
-  top: -2px;
-  right: 40px;
+  top: 137px;
+  right: 50px;
   height: 24px;
   width: 24px;
   background: url(./../img/icons/check-all.svg);
@@ -496,14 +502,14 @@ input[type='number']::-webkit-inner-spin-button {
 .resp_places::before {
   content: 'Бюджетных мест:';
   position: absolute;
-  left: -282px;
+  left: 15px;
 }
 
 .resp_places::after {
   content: '';
   position: absolute;
-  top: -1px;
-  right: 40px;
+  top: 110px;
+  right: 50px;
   height: 20px;
   width: 20px;
   background: url(./../img/icons/people.svg);
@@ -568,6 +574,7 @@ input[type='number']::-webkit-inner-spin-button {
   display: flex;
   width: 325px;
   position: relative;
+  text-decoration: underline;
 }
 
 .doc a {
@@ -787,6 +794,7 @@ input[type='number']::-webkit-inner-spin-button {
   }
 
   .calculator_subjects input {
+    width: 70px;
     font-size: 18px;
   }
 
@@ -875,10 +883,12 @@ input[type='number']::-webkit-inner-spin-button {
 
   .resp_score {
     margin: auto 45px auto 80px;
+    position: relative;
   }
 
   .resp_places {
     margin: auto 45px auto 80px;
+    position: relative;
   }
 
   .resp_code::before {

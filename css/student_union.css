@@ -11,6 +11,10 @@
   margin-bottom: 50px;
 }
 
+.about_title {
+  text-align: left;
+}
+
 .about_picture {
   display: inline-block;
   position: absolute;
@@ -45,6 +49,8 @@
   align-items: center;
   color: #fcba28;
   transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+  user-select: none;
+
 }
 
 .button:active,
@@ -70,6 +76,8 @@
   height: 207px;
   background-color: #0f0d0e;
   border-radius: 20px;
+  user-select: none;
+
 }
 
 .event img {
@@ -88,6 +96,7 @@
   text-align: center;
   z-index: 5;
   text-shadow: 1px 1px 2px #0f0d0e;
+  
 }
 
 /* Overlay event */
@@ -105,8 +114,8 @@
 
 .overlay_event {
   /* width: calc(100%-60px); */
-  max-height: calc(100vh - 60px);
-  margin: 15px;
+  max-height: 80vh;
+  margin: auto 15px;
   padding: 15px;
   border-radius: 15px;
   background-color: #f9f4da;
@@ -133,7 +142,8 @@
 }
 
 .overlay_content {
-  max-height: calc(100vh - 125px);
+  /* max-height: calc(100vh - 125px); */
+  max-height: 70vh;
   overflow-y: auto;
   width: 100%;
   padding-right: 7px;
@@ -228,7 +238,7 @@
   margin-bottom: 50px;
 }
 .person {
-  width: 160px;
+  width: 140px;
   margin-bottom: 20px;
 }
 
@@ -237,8 +247,8 @@
 }
 
 .person img {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
 }
 
@@ -329,6 +339,7 @@
 
 .content img:first-of-type {
   width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -387,6 +398,7 @@
   width: 325px;
   position: relative;
   height: 34px;
+  text-decoration: underline;
 }
 
 .doc a {

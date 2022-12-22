@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="about_picture">
-        <img src="img/student_union/Flion_1.png" alt="Корпус ФТИ" />
+        <img src="img/student_union/Flion_1.png" alt="Логотип ФТИ" />
       </div>
     </div>
   </div>

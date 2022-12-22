@@ -29,7 +29,9 @@
       </div>
     </header>
     <div class="logo_mobile">
-      <img src="img/лев.png" alt="Логотип ФТИ">
+      <a href="index.php">
+        <img src="img/лев.png" alt="Логотип ФТИ" />
+      </a>
     </div>
     <div class="toggle_sidebar">
       <button class="menu_icon_wrapper">
